@@ -1,0 +1,1997 @@
+GAS LISTING /tmp/ccBjCewY.s 			page 1
+
+
+   1               		.file	"XenoAT.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/andrea/Downloads/XenoGC-Source/XenoAT/",100,0,2,.Ltext0
+   8               		.stabs	"XenoAT.c",100,0,2,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  13               		.stabs	"char:t(0,2)=@s8;r(0,2);0;255;",128,0,0,0
+  14               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,0,0
+  15               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,0,0
+  16               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,0,0
+  17               		.stabs	"long long int:t(0,6)=@s64;r(0,6);01000000000000000000000;0777777777777777777777;",128,0,0,
+  18               		.stabs	"long long unsigned int:t(0,7)=@s64;r(0,7);0;01777777777777777777777;",128,0,0,0
+  19               		.stabs	"short int:t(0,8)=r(0,8);-32768;32767;",128,0,0,0
+  20               		.stabs	"short unsigned int:t(0,9)=r(0,9);0;0177777;",128,0,0,0
+  21               		.stabs	"signed char:t(0,10)=@s8;r(0,10);-128;127;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,0,0
+  23               		.stabs	"float:t(0,12)=r(0,1);4;0;",128,0,0,0
+  24               		.stabs	"double:t(0,13)=r(0,1);4;0;",128,0,0,0
+  25               		.stabs	"long double:t(0,14)=r(0,1);4;0;",128,0,0,0
+  26               		.stabs	"short _Fract:t(0,15)=r(0,1);1;0;",128,0,0,0
+  27               		.stabs	"_Fract:t(0,16)=r(0,1);2;0;",128,0,0,0
+  28               		.stabs	"long _Fract:t(0,17)=r(0,1);4;0;",128,0,0,0
+  29               		.stabs	"long long _Fract:t(0,18)=r(0,1);8;0;",128,0,0,0
+  30               		.stabs	"unsigned short _Fract:t(0,19)=r(0,1);1;0;",128,0,0,0
+  31               		.stabs	"unsigned _Fract:t(0,20)=r(0,1);2;0;",128,0,0,0
+  32               		.stabs	"unsigned long _Fract:t(0,21)=r(0,1);4;0;",128,0,0,0
+  33               		.stabs	"unsigned long long _Fract:t(0,22)=r(0,1);8;0;",128,0,0,0
+  34               		.stabs	"_Sat short _Fract:t(0,23)=r(0,1);1;0;",128,0,0,0
+  35               		.stabs	"_Sat _Fract:t(0,24)=r(0,1);2;0;",128,0,0,0
+  36               		.stabs	"_Sat long _Fract:t(0,25)=r(0,1);4;0;",128,0,0,0
+  37               		.stabs	"_Sat long long _Fract:t(0,26)=r(0,1);8;0;",128,0,0,0
+  38               		.stabs	"_Sat unsigned short _Fract:t(0,27)=r(0,1);1;0;",128,0,0,0
+  39               		.stabs	"_Sat unsigned _Fract:t(0,28)=r(0,1);2;0;",128,0,0,0
+  40               		.stabs	"_Sat unsigned long _Fract:t(0,29)=r(0,1);4;0;",128,0,0,0
+  41               		.stabs	"_Sat unsigned long long _Fract:t(0,30)=r(0,1);8;0;",128,0,0,0
+  42               		.stabs	"short _Accum:t(0,31)=r(0,1);2;0;",128,0,0,0
+  43               		.stabs	"_Accum:t(0,32)=r(0,1);4;0;",128,0,0,0
+  44               		.stabs	"long _Accum:t(0,33)=r(0,1);8;0;",128,0,0,0
+  45               		.stabs	"long long _Accum:t(0,34)=r(0,1);8;0;",128,0,0,0
+  46               		.stabs	"unsigned short _Accum:t(0,35)=r(0,1);2;0;",128,0,0,0
+  47               		.stabs	"unsigned _Accum:t(0,36)=r(0,1);4;0;",128,0,0,0
+  48               		.stabs	"unsigned long _Accum:t(0,37)=r(0,1);8;0;",128,0,0,0
+  49               		.stabs	"unsigned long long _Accum:t(0,38)=r(0,1);8;0;",128,0,0,0
+  50               		.stabs	"_Sat short _Accum:t(0,39)=r(0,1);2;0;",128,0,0,0
+  51               		.stabs	"_Sat _Accum:t(0,40)=r(0,1);4;0;",128,0,0,0
+  52               		.stabs	"_Sat long _Accum:t(0,41)=r(0,1);8;0;",128,0,0,0
+  53               		.stabs	"_Sat long long _Accum:t(0,42)=r(0,1);8;0;",128,0,0,0
+  54               		.stabs	"_Sat unsigned short _Accum:t(0,43)=r(0,1);2;0;",128,0,0,0
+  55               		.stabs	"_Sat unsigned _Accum:t(0,44)=r(0,1);4;0;",128,0,0,0
+  56               		.stabs	"_Sat unsigned long _Accum:t(0,45)=r(0,1);8;0;",128,0,0,0
+  57               		.stabs	"_Sat unsigned long long _Accum:t(0,46)=r(0,1);8;0;",128,0,0,0
+GAS LISTING /tmp/ccBjCewY.s 			page 2
+
+
+  58               		.stabs	"void:t(0,47)=(0,47)",128,0,0,0
+  59               		.stabs	"/usr/lib/avr/include/avr/io.h",130,0,0,0
+  60               		.stabs	"/usr/lib/avr/include/avr/sfr_defs.h",130,0,0,0
+  61               		.stabs	"/usr/lib/avr/include/inttypes.h",130,0,0,0
+  62               		.stabs	"/usr/lib/gcc/avr/4.8.1/include/stdint.h",130,0,0,0
+  63               		.stabs	"/usr/lib/avr/include/stdint.h",130,0,0,0
+  64               		.stabs	"int8_t:t(5,1)=(0,10)",128,0,121,0
+  65               		.stabs	"uint8_t:t(5,2)=(0,11)",128,0,122,0
+  66               		.stabs	"int16_t:t(5,3)=(0,1)",128,0,123,0
+  67               		.stabs	"uint16_t:t(5,4)=(0,4)",128,0,124,0
+  68               		.stabs	"int32_t:t(5,5)=(0,3)",128,0,125,0
+  69               		.stabs	"uint32_t:t(5,6)=(0,5)",128,0,126,0
+  70               		.stabs	"int64_t:t(5,7)=(0,6)",128,0,128,0
+  71               		.stabs	"uint64_t:t(5,8)=(0,7)",128,0,129,0
+  72               		.stabs	"intptr_t:t(5,9)=(5,3)",128,0,142,0
+  73               		.stabs	"uintptr_t:t(5,10)=(5,4)",128,0,147,0
+  74               		.stabs	"int_least8_t:t(5,11)=(5,1)",128,0,159,0
+  75               		.stabs	"uint_least8_t:t(5,12)=(5,2)",128,0,164,0
+  76               		.stabs	"int_least16_t:t(5,13)=(5,3)",128,0,169,0
+  77               		.stabs	"uint_least16_t:t(5,14)=(5,4)",128,0,174,0
+  78               		.stabs	"int_least32_t:t(5,15)=(5,5)",128,0,179,0
+  79               		.stabs	"uint_least32_t:t(5,16)=(5,6)",128,0,184,0
+  80               		.stabs	"int_least64_t:t(5,17)=(5,7)",128,0,192,0
+  81               		.stabs	"uint_least64_t:t(5,18)=(5,8)",128,0,199,0
+  82               		.stabs	"int_fast8_t:t(5,19)=(5,1)",128,0,213,0
+  83               		.stabs	"uint_fast8_t:t(5,20)=(5,2)",128,0,218,0
+  84               		.stabs	"int_fast16_t:t(5,21)=(5,3)",128,0,223,0
+  85               		.stabs	"uint_fast16_t:t(5,22)=(5,4)",128,0,228,0
+  86               		.stabs	"int_fast32_t:t(5,23)=(5,5)",128,0,233,0
+  87               		.stabs	"uint_fast32_t:t(5,24)=(5,6)",128,0,238,0
+  88               		.stabs	"int_fast64_t:t(5,25)=(5,7)",128,0,246,0
+  89               		.stabs	"uint_fast64_t:t(5,26)=(5,8)",128,0,253,0
+  90               		.stabs	"intmax_t:t(5,27)=(5,7)",128,0,273,0
+  91               		.stabs	"uintmax_t:t(5,28)=(5,8)",128,0,278,0
+  92               		.stabn	162,0,0,0
+  93               		.stabn	162,0,0,0
+  94               		.stabs	"int_farptr_t:t(3,1)=(5,5)",128,0,77,0
+  95               		.stabs	"uint_farptr_t:t(3,2)=(5,6)",128,0,81,0
+  96               		.stabn	162,0,0,0
+  97               		.stabn	162,0,0,0
+  98               		.stabs	"/usr/lib/avr/include/avr/fuse.h",130,0,0,0
+  99               		.stabs	"__fuse_t:t(6,1)=(6,2)=s3low:(0,11),0,8;high:(0,11),8,8;extended:(0,11),16,8;;",128,0,244,0
+ 100               		.stabn	162,0,0,0
+ 101               		.stabn	162,0,0,0
+ 102               		.stabs	"/usr/lib/avr/include/avr/pgmspace.h",130,0,0,0
+ 103               		.stabs	"/usr/lib/gcc/avr/4.8.1/include/stddef.h",130,0,0,0
+ 104               		.stabs	"size_t:t(8,1)=(0,4)",128,0,212,0
+ 105               		.stabn	162,0,0,0
+ 106               		.stabn	162,0,0,0
+ 107               		.stabs	"u32:t(0,48)=(0,5)",128,0,12,0
+ 108               		.stabs	"u16:t(0,49)=(0,9)",128,0,13,0
+ 109               		.stabs	"u8:t(0,50)=(0,11)",128,0,14,0
+ 110               		.section	.init3,"ax",@progbits
+ 111               		.stabs	"wdt_init:F(0,47)",36,0,93,wdt_init
+ 112               	.global	wdt_init
+ 113               		.type	wdt_init, @function
+ 114               	wdt_init:
+GAS LISTING /tmp/ccBjCewY.s 			page 3
+
+
+ 115               		.stabd	46,0,0
+   1:XenoAT.c      **** #include <avr/io.h>
+   2:XenoAT.c      **** #include <avr/signal.h>
+   3:XenoAT.c      **** #include <avr/interrupt.h>
+   4:XenoAT.c      **** #include <avr/pgmspace.h>
+   5:XenoAT.c      **** #include <math.h>
+   6:XenoAT.c      **** #include <string.h>
+   7:XenoAT.c      **** #include "qCode.h"
+   8:XenoAT.c      **** #include <avr/wdt.h>
+   9:XenoAT.c      **** // Function Pototype
+  10:XenoAT.c      **** void wdt_init(void) __attribute__((naked)) __attribute__((section(".init3")));
+  11:XenoAT.c      **** 
+  12:XenoAT.c      **** typedef unsigned long  u32;
+  13:XenoAT.c      **** typedef unsigned short u16;
+  14:XenoAT.c      **** typedef unsigned char  u8;
+  15:XenoAT.c      **** 
+  16:XenoAT.c      **** #define RELEASE
+  17:XenoAT.c      **** #define LOADER_ADDR 0x40D000
+  18:XenoAT.c      **** 
+  19:XenoAT.c      **** #define VER2	// VER1 VER2
+  20:XenoAT.c      **** 
+  21:XenoAT.c      **** 
+  22:XenoAT.c      **** 
+  23:XenoAT.c      **** /* NOTE: OUT,CLK,IN must be on the same port. */
+  24:XenoAT.c      **** #ifdef VER1
+  25:XenoAT.c      **** #define X_OUT 0x10
+  26:XenoAT.c      **** #define X_OUT_PORT PORTB
+  27:XenoAT.c      **** #define X_OUT_PIN PINB
+  28:XenoAT.c      **** #define X_OUT_DDR DDRB
+  29:XenoAT.c      **** #define X_CLK 0x08
+  30:XenoAT.c      **** #define X_CLK_PORT PORTB
+  31:XenoAT.c      **** #define X_CLK_PIN PINB
+  32:XenoAT.c      **** #define X_CLK_DDR DDRB
+  33:XenoAT.c      **** #define X_IN  0x20
+  34:XenoAT.c      **** #define X_IN_PORT  PORTB
+  35:XenoAT.c      **** #define X_IN_PIN  PINB
+  36:XenoAT.c      **** #define X_IN_DDR  DDRB
+  37:XenoAT.c      **** #define X_STR 0x08
+  38:XenoAT.c      **** #define X_STR_PORT PORTD
+  39:XenoAT.c      **** #define X_STR_PIN PIND
+  40:XenoAT.c      **** #define X_STR_DDR DDRD
+  41:XenoAT.c      **** 
+  42:XenoAT.c      **** // green
+  43:XenoAT.c      **** #define LED1_ON   PORTB &=~0x80
+  44:XenoAT.c      **** #define LED1_OFF  PORTB |= 0x80
+  45:XenoAT.c      **** // red
+  46:XenoAT.c      **** #define LED2_ON   PORTC &=~0x01
+  47:XenoAT.c      **** #define LED2_OFF  PORTC |= 0x01
+  48:XenoAT.c      **** #define LED_INIT  DDRB = 0x80; DDRC = 1;
+  49:XenoAT.c      **** 
+  50:XenoAT.c      **** 
+  51:XenoAT.c      **** #else
+  52:XenoAT.c      **** #define X_OUT 0x10
+  53:XenoAT.c      **** #define X_OUT_PORT PORTB
+  54:XenoAT.c      **** #define X_OUT_PIN PINB
+  55:XenoAT.c      **** #define X_OUT_DDR DDRB
+  56:XenoAT.c      **** #define X_CLK 0x20
+GAS LISTING /tmp/ccBjCewY.s 			page 4
+
+
+  57:XenoAT.c      **** #define X_CLK_PORT PORTB
+  58:XenoAT.c      **** #define X_CLK_PIN PINB
+  59:XenoAT.c      **** #define X_CLK_DDR DDRB
+  60:XenoAT.c      **** #define X_IN  0x08
+  61:XenoAT.c      **** #define X_IN_PORT  PORTB
+  62:XenoAT.c      **** #define X_IN_PIN  PINB
+  63:XenoAT.c      **** #define X_IN_DDR  DDRB
+  64:XenoAT.c      **** #define X_STR 0x02
+  65:XenoAT.c      **** #define X_STR_PORT PORTB
+  66:XenoAT.c      **** #define X_STR_PIN PINB
+  67:XenoAT.c      **** #define X_STR_DDR DDRB
+  68:XenoAT.c      **** 
+  69:XenoAT.c      **** // green
+  70:XenoAT.c      **** #define LED1_ON   PORTD &=~0x04
+  71:XenoAT.c      **** #define LED1_OFF  PORTD |= 0x04
+  72:XenoAT.c      **** // red
+  73:XenoAT.c      **** #define LED2_ON   PORTD &=~0x08
+  74:XenoAT.c      **** #define LED2_OFF  PORTD |= 0x08
+  75:XenoAT.c      **** #define LED_INIT  DDRD = 0x0C;
+  76:XenoAT.c      **** 
+  77:XenoAT.c      **** #endif
+  78:XenoAT.c      **** 
+  79:XenoAT.c      **** extern const u8 qcode[];
+  80:XenoAT.c      **** extern const u8* qcode_end;
+  81:XenoAT.c      **** extern const u8 upload[];
+  82:XenoAT.c      **** extern const u8* upload_end;
+  83:XenoAT.c      **** extern const u8 credits[];
+  84:XenoAT.c      **** extern const u8* credits_end;
+  85:XenoAT.c      **** 
+  86:XenoAT.c      **** 
+  87:XenoAT.c      **** void wdt_init(void);
+  88:XenoAT.c      **** void reset(void);
+  89:XenoAT.c      **** void ldelay(volatile int i);
+  90:XenoAT.c      **** 
+  91:XenoAT.c      **** 
+  92:XenoAT.c      **** // Function Implementation
+  93:XenoAT.c      **** void wdt_init(void)
+  94:XenoAT.c      **** {
+ 116               		.stabn	68,0,94,.LM0-.LFBB1
+ 117               	.LM0:
+ 118               	.LFBB1:
+ 119               	/* prologue: naked */
+ 120               	/* frame size = 0 */
+ 121               	/* stack size = 0 */
+ 122               	.L__stack_usage = 0
+  95:XenoAT.c      ****     MCUSR = 0;
+ 123               		.stabn	68,0,95,.LM1-.LFBB1
+ 124               	.LM1:
+ 125 0000 14BE      		out 0x34,__zero_reg__
+  96:XenoAT.c      ****     wdt_disable();
+ 126               		.stabn	68,0,96,.LM2-.LFBB1
+ 127               	.LM2:
+ 128 0002 88E1      		ldi r24,lo8(24)
+ 129               	/* #APP */
+ 130               	 ;  96 "XenoAT.c" 1
+ 131 0004 0FB6      		in __tmp_reg__, __SREG__
+ 132 0006 F894      		cli
+GAS LISTING /tmp/ccBjCewY.s 			page 5
+
+
+ 133 0008 8093 6000 		sts 96, r24
+ 134 000c 1092 6000 		sts 96, __zero_reg__
+ 135 0010 0FBE      		out __SREG__,__tmp_reg__
+ 136               		
+ 137               	 ;  0 "" 2
+ 138               	/* epilogue start */
+  97:XenoAT.c      **** 
+  98:XenoAT.c      ****     return;
+  99:XenoAT.c      **** }
+ 139               		.stabn	68,0,99,.LM3-.LFBB1
+ 140               	.LM3:
+ 141               	/* #NOAPP */
+ 142               		.size	wdt_init, .-wdt_init
+ 143               	.Lscope1:
+ 144               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 145               		.stabd	78,0,0
+ 146               		.text
+ 147               		.stabs	"delay:F(0,47)",36,0,102,delay
+ 148               	.global	delay
+ 149               		.type	delay, @function
+ 150               	delay:
+ 151               		.stabd	46,0,0
+ 100:XenoAT.c      **** 
+ 101:XenoAT.c      **** 
+ 102:XenoAT.c      **** inline void delay(void)
+ 103:XenoAT.c      **** {
+ 152               		.stabn	68,0,103,.LM4-.LFBB2
+ 153               	.LM4:
+ 154               	.LFBB2:
+ 155               	/* prologue: function */
+ 156               	/* frame size = 0 */
+ 157               	/* stack size = 0 */
+ 158               	.L__stack_usage = 0
+ 159 0000 0895      		ret
+ 160               		.size	delay, .-delay
+ 161               	.Lscope2:
+ 162               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 163               		.stabd	78,0,0
+ 164               		.stabs	"io:F(0,1)",36,0,168,io
+ 165               		.stabs	"i:P(0,2)",64,0,168,24
+ 166               	.global	io
+ 167               		.type	io, @function
+ 168               	io:
+ 169               		.stabd	46,0,0
+ 104:XenoAT.c      **** 	int i = 200;
+ 105:XenoAT.c      **** 	while (i--);
+ 106:XenoAT.c      **** }
+ 107:XenoAT.c      **** 
+ 108:XenoAT.c      **** #ifndef RELEASE
+ 109:XenoAT.c      **** 
+ 110:XenoAT.c      **** void USART_Init( unsigned int baud )
+ 111:XenoAT.c      **** {
+ 112:XenoAT.c      **** 	UCSRA = 2;
+ 113:XenoAT.c      **** 	/* Set baud rate */
+ 114:XenoAT.c      **** 	UBRRH = (unsigned char)(baud>>8);
+ 115:XenoAT.c      **** 	UBRRL = (unsigned char)baud;
+ 116:XenoAT.c      **** 	/* Enable Receiver and Transmitter */
+GAS LISTING /tmp/ccBjCewY.s 			page 6
+
+
+ 117:XenoAT.c      **** 	UCSRB = /* (1<<RXEN)| */ (1<<TXEN);
+ 118:XenoAT.c      **** 	/* Set frame format: 8data, 1stop bit */
+ 119:XenoAT.c      **** 	UCSRC = (0<<USBS)|(3<<UCSZ0)|(1<<URSEL);
+ 120:XenoAT.c      **** }
+ 121:XenoAT.c      **** 
+ 122:XenoAT.c      **** void USART_Transmit( unsigned char data )
+ 123:XenoAT.c      **** {
+ 124:XenoAT.c      **** 	if (data == '\n')
+ 125:XenoAT.c      **** 		USART_Transmit('\r');
+ 126:XenoAT.c      **** 	/* Wait for empty transmit buffer */
+ 127:XenoAT.c      **** 	while ( !( UCSRA & (1<<UDRE)) );
+ 128:XenoAT.c      **** 	/* Put data into buffer, sends the data */
+ 129:XenoAT.c      **** 	UDR = data;
+ 130:XenoAT.c      **** }
+ 131:XenoAT.c      **** 
+ 132:XenoAT.c      **** void sputs( char* data )
+ 133:XenoAT.c      **** {
+ 134:XenoAT.c      **** 	while (*data) USART_Transmit(*data++);
+ 135:XenoAT.c      **** }
+ 136:XenoAT.c      **** 
+ 137:XenoAT.c      **** #else
+ 138:XenoAT.c      **** #define sputs(x)
+ 139:XenoAT.c      **** #endif
+ 140:XenoAT.c      **** 
+ 141:XenoAT.c      **** 
+ 142:XenoAT.c      **** #ifndef RELEASE
+ 143:XenoAT.c      **** void sputhex16(short c)
+ 144:XenoAT.c      **** {
+ 145:XenoAT.c      **** 	char i;
+ 146:XenoAT.c      **** 	for (i=0; i<4; ++i)
+ 147:XenoAT.c      **** 		USART_Transmit("0123456789ABCDEF"[(c>>(12-(i*4)))&0xF]);
+ 148:XenoAT.c      **** }
+ 149:XenoAT.c      **** 
+ 150:XenoAT.c      **** void sputhex8(short c)
+ 151:XenoAT.c      **** {
+ 152:XenoAT.c      **** 	char i;
+ 153:XenoAT.c      **** 	for (i=0; i<2; ++i)
+ 154:XenoAT.c      **** 		USART_Transmit("0123456789ABCDEF"[(c>>(4-(i*4)))&0xF]);
+ 155:XenoAT.c      **** 	
+ 156:XenoAT.c      **** 	USART_Transmit(' ');
+ 157:XenoAT.c      **** }
+ 158:XenoAT.c      **** #else
+ 159:XenoAT.c      **** #define sputhex16(x)		x;
+ 160:XenoAT.c      **** #define sputhex8(x)			x;
+ 161:XenoAT.c      **** #endif
+ 162:XenoAT.c      **** 
+ 163:XenoAT.c      **** //// xxx stuff
+ 164:XenoAT.c      **** 
+ 165:XenoAT.c      **** int ndelay = 0;
+ 166:XenoAT.c      **** 
+ 167:XenoAT.c      **** 
+ 168:XenoAT.c      **** int io(char i)
+ 169:XenoAT.c      **** {
+ 170               		.stabn	68,0,169,.LM5-.LFBB3
+ 171               	.LM5:
+ 172               	.LFBB3:
+ 173               	/* prologue: function */
+GAS LISTING /tmp/ccBjCewY.s 			page 7
+
+
+ 174               	/* frame size = 0 */
+ 175               	/* stack size = 0 */
+ 176               	.L__stack_usage = 0
+ 170:XenoAT.c      **** 	char res = 0;
+ 171:XenoAT.c      **** 
+ 172:XenoAT.c      **** 	if (i)
+ 177               		.stabn	68,0,172,.LM6-.LFBB3
+ 178               	.LM6:
+ 179 0002 8823      		tst r24
+ 180 0004 01F0      		breq .L4
+ 173:XenoAT.c      **** 		X_OUT_PORT |= X_OUT;
+ 181               		.stabn	68,0,173,.LM7-.LFBB3
+ 182               	.LM7:
+ 183 0006 2C9A      		sbi 0x5,4
+ 184 0008 00C0      		rjmp .L5
+ 185               	.L4:
+ 174:XenoAT.c      **** 	else
+ 175:XenoAT.c      **** 		X_OUT_PORT &=~X_OUT;
+ 186               		.stabn	68,0,175,.LM8-.LFBB3
+ 187               	.LM8:
+ 188 000a 2C98      		cbi 0x5,4
+ 189               	.L5:
+ 176:XenoAT.c      **** 	
+ 177:XenoAT.c      **** 	X_CLK_PORT &=~X_CLK; if (!ndelay) delay();
+ 190               		.stabn	68,0,177,.LM9-.LFBB3
+ 191               	.LM9:
+ 192 000c 2D98      		cbi 0x5,5
+ 178:XenoAT.c      **** 	res = X_IN_PIN & X_IN;
+ 193               		.stabn	68,0,178,.LM10-.LFBB3
+ 194               	.LM10:
+ 195 000e 83B1      		in r24,0x3
+ 179:XenoAT.c      **** 	X_CLK_PORT |= X_CLK; if (!ndelay) delay();
+ 196               		.stabn	68,0,179,.LM11-.LFBB3
+ 197               	.LM11:
+ 198 0010 2D9A      		sbi 0x5,5
+ 180:XenoAT.c      **** 	
+ 181:XenoAT.c      **** 	return !!res;
+ 182:XenoAT.c      **** }
+ 199               		.stabn	68,0,182,.LM12-.LFBB3
+ 200               	.LM12:
+ 201 0012 83FB      		bst r24,3
+ 202 0014 8827      		clr r24
+ 203 0016 80F9      		bld r24,0
+ 204 0018 90E0      		ldi r25,0
+ 205 001a 0895      		ret
+ 206               		.size	io, .-io
+ 207               	.Lscope3:
+ 208               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 209               		.stabd	78,0,0
+ 210               		.stabs	"io8:F(0,11)",36,0,211,io8
+ 211               		.stabs	"c:P(0,11)",64,0,211,14
+ 212               	.global	io8
+ 213               		.type	io8, @function
+ 214               	io8:
+ 215               		.stabd	46,0,0
+ 183:XenoAT.c      **** 
+ 184:XenoAT.c      **** void send8(unsigned char c)
+GAS LISTING /tmp/ccBjCewY.s 			page 8
+
+
+ 185:XenoAT.c      **** {
+ 186:XenoAT.c      **** 	int i = 0;
+ 187:XenoAT.c      **** 	
+ 188:XenoAT.c      **** 	while (X_STR_PIN & X_STR) if (i++ > 10000) reset();
+ 189:XenoAT.c      **** 	for (i=0; i<8; ++i)
+ 190:XenoAT.c      **** 	{
+ 191:XenoAT.c      **** 		if (X_STR_PIN & X_STR)
+ 192:XenoAT.c      **** 			reset();
+ 193:XenoAT.c      **** 		io(c & (1<<i));
+ 194:XenoAT.c      **** 	}
+ 195:XenoAT.c      **** }
+ 196:XenoAT.c      **** 
+ 197:XenoAT.c      **** unsigned char recv8(void)
+ 198:XenoAT.c      **** {
+ 199:XenoAT.c      **** 	unsigned char x = 0;
+ 200:XenoAT.c      **** 	int i=0;
+ 201:XenoAT.c      **** 	while (!(X_STR_PIN & X_STR)) if (i++ > 10000) reset();
+ 202:XenoAT.c      **** 	for (i=0; i<8; ++i)
+ 203:XenoAT.c      **** 	{
+ 204:XenoAT.c      **** 		if (!(X_STR_PIN & X_STR))
+ 205:XenoAT.c      **** 			reset();
+ 206:XenoAT.c      **** 		x |= io(0) << i;
+ 207:XenoAT.c      **** 	}
+ 208:XenoAT.c      **** 	return x;
+ 209:XenoAT.c      **** }
+ 210:XenoAT.c      **** 
+ 211:XenoAT.c      **** unsigned char io8(unsigned char c)
+ 212:XenoAT.c      **** {
+ 216               		.stabn	68,0,212,.LM13-.LFBB4
+ 217               	.LM13:
+ 218               	.LFBB4:
+ 219 001c EF92      		push r14
+ 220 001e FF92      		push r15
+ 221 0020 0F93      		push r16
+ 222 0022 1F93      		push r17
+ 223 0024 CF93      		push r28
+ 224 0026 DF93      		push r29
+ 225               	/* prologue: function */
+ 226               	/* frame size = 0 */
+ 227               	/* stack size = 6 */
+ 228               	.L__stack_usage = 6
+ 229 0028 E82E      		mov r14,r24
+ 213:XenoAT.c      **** 	unsigned char x = 0;
+ 214:XenoAT.c      **** 	int i;
+ 215:XenoAT.c      **** 	for (i=0; i<8; ++i)
+ 230               		.stabn	68,0,215,.LM14-.LFBB4
+ 231               	.LM14:
+ 232 002a C0E0      		ldi r28,0
+ 233 002c D0E0      		ldi r29,0
+ 213:XenoAT.c      **** 	unsigned char x = 0;
+ 234               		.stabn	68,0,213,.LM15-.LFBB4
+ 235               	.LM15:
+ 236 002e F12C      		mov r15,__zero_reg__
+ 216:XenoAT.c      **** 		x |= io(c & (1<<i)) << i;
+ 237               		.stabn	68,0,216,.LM16-.LFBB4
+ 238               	.LM16:
+ 239 0030 01E0      		ldi r16,lo8(1)
+GAS LISTING /tmp/ccBjCewY.s 			page 9
+
+
+ 240 0032 10E0      		ldi r17,0
+ 241               	.L9:
+ 242               		.stabn	68,0,216,.LM17-.LFBB4
+ 243               	.LM17:
+ 244 0034 C801      		movw r24,r16
+ 245 0036 0C2E      		mov r0,r28
+ 246 0038 00C0      		rjmp 2f
+ 247               		1:
+ 248 003a 880F      		lsl r24
+ 249               		2:
+ 250 003c 0A94      		dec r0
+ 251 003e 02F4      		brpl 1b
+ 252 0040 8E21      		and r24,r14
+ 253 0042 0E94 0000 		call io
+ 254 0046 0C2E      		mov r0,r28
+ 255 0048 00C0      		rjmp 2f
+ 256               		1:
+ 257 004a 880F      		lsl r24
+ 258               		2:
+ 259 004c 0A94      		dec r0
+ 260 004e 02F4      		brpl 1b
+ 261 0050 F82A      		or r15,r24
+ 215:XenoAT.c      **** 		x |= io(c & (1<<i)) << i;
+ 262               		.stabn	68,0,215,.LM18-.LFBB4
+ 263               	.LM18:
+ 264 0052 2196      		adiw r28,1
+ 265 0054 C830      		cpi r28,8
+ 266 0056 D105      		cpc r29,__zero_reg__
+ 267 0058 01F4      		brne .L9
+ 217:XenoAT.c      **** 	return x;
+ 218:XenoAT.c      **** }
+ 268               		.stabn	68,0,218,.LM19-.LFBB4
+ 269               	.LM19:
+ 270 005a 8F2D      		mov r24,r15
+ 271               	/* epilogue start */
+ 272 005c DF91      		pop r29
+ 273 005e CF91      		pop r28
+ 274 0060 1F91      		pop r17
+ 275 0062 0F91      		pop r16
+ 276 0064 FF90      		pop r15
+ 277 0066 EF90      		pop r14
+ 278 0068 0895      		ret
+ 279               		.size	io8, .-io8
+ 280               		.stabs	"x:r(0,11)",64,0,213,15
+ 281               		.stabs	"i:r(0,1)",64,0,214,28
+ 282               		.stabn	192,0,0,.LFBB4-.LFBB4
+ 283               		.stabn	224,0,0,.Lscope4-.LFBB4
+ 284               	.Lscope4:
+ 285               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 286               		.stabd	78,0,0
+ 287               		.stabs	"reset:F(0,47)",36,0,306,reset
+ 288               	.global	reset
+ 289               		.type	reset, @function
+ 290               	reset:
+ 291               		.stabd	46,0,0
+ 219:XenoAT.c      **** 
+ 220:XenoAT.c      **** /*
+GAS LISTING /tmp/ccBjCewY.s 			page 10
+
+
+ 221:XenoAT.c      **** unsigned char recv8_nowait(void)
+ 222:XenoAT.c      **** {
+ 223:XenoAT.c      **** 	unsigned char x = 0;
+ 224:XenoAT.c      **** 	int i;
+ 225:XenoAT.c      **** 	for (i=0; i<8; ++i)
+ 226:XenoAT.c      **** 		x |= io(0) << i;
+ 227:XenoAT.c      **** 	return x;
+ 228:XenoAT.c      **** }
+ 229:XenoAT.c      **** */
+ 230:XenoAT.c      **** 
+ 231:XenoAT.c      **** int read_mem(unsigned char *dst, long addr, int len)
+ 232:XenoAT.c      **** {
+ 233:XenoAT.c      **** 	send8(0xff);
+ 234:XenoAT.c      **** 	send8(0);
+ 235:XenoAT.c      **** 	send8(addr >> 8);
+ 236:XenoAT.c      **** 	send8(addr);
+ 237:XenoAT.c      **** 	send8(0);
+ 238:XenoAT.c      **** 	send8(addr >> 16); // high
+ 239:XenoAT.c      **** 	send8(0);
+ 240:XenoAT.c      **** 	send8(0);
+ 241:XenoAT.c      **** 	
+ 242:XenoAT.c      **** 	send8(len);
+ 243:XenoAT.c      **** 	send8(0);
+ 244:XenoAT.c      **** 	
+ 245:XenoAT.c      **** 	int err = recv8();
+ 246:XenoAT.c      **** 	err |= recv8() << 8;
+ 247:XenoAT.c      **** 	
+ 248:XenoAT.c      **** 	if (err)
+ 249:XenoAT.c      **** 	{
+ 250:XenoAT.c      **** 		sputs("error: ");
+ 251:XenoAT.c      **** 		sputhex16(err);
+ 252:XenoAT.c      **** 		sputs("\n");
+ 253:XenoAT.c      **** 		return err;
+ 254:XenoAT.c      **** 	}
+ 255:XenoAT.c      **** 	
+ 256:XenoAT.c      **** 	while (len--)
+ 257:XenoAT.c      **** 		*dst++ = recv8();
+ 258:XenoAT.c      **** 
+ 259:XenoAT.c      **** 	return 0;
+ 260:XenoAT.c      **** }
+ 261:XenoAT.c      **** 
+ 262:XenoAT.c      **** void write_word(long address, unsigned short data)
+ 263:XenoAT.c      **** {
+ 264:XenoAT.c      **** 	send8(0xfe);
+ 265:XenoAT.c      **** 	send8(0x00);
+ 266:XenoAT.c      **** 	send8(address >> 8);
+ 267:XenoAT.c      **** 	send8(address);
+ 268:XenoAT.c      **** 	
+ 269:XenoAT.c      **** 	send8(data);
+ 270:XenoAT.c      **** 	send8(address >> 16);
+ 271:XenoAT.c      **** 	send8(data >> 8);
+ 272:XenoAT.c      **** 	send8(0);
+ 273:XenoAT.c      **** 	
+ 274:XenoAT.c      **** 	send8(2);
+ 275:XenoAT.c      **** 	send8(0);
+ 276:XenoAT.c      **** 	
+ 277:XenoAT.c      **** 	recv8(); recv8(); recv8(); recv8();
+GAS LISTING /tmp/ccBjCewY.s 			page 11
+
+
+ 278:XenoAT.c      **** }
+ 279:XenoAT.c      **** 
+ 280:XenoAT.c      **** void write_word_norecv(long address, unsigned short data)
+ 281:XenoAT.c      **** {
+ 282:XenoAT.c      **** 	send8(0xfe);
+ 283:XenoAT.c      **** 	send8(0x00);
+ 284:XenoAT.c      **** 	send8(address >> 8);
+ 285:XenoAT.c      **** 	send8(address);
+ 286:XenoAT.c      **** 	
+ 287:XenoAT.c      **** 	send8(data);
+ 288:XenoAT.c      **** 	send8(address >> 16);
+ 289:XenoAT.c      **** 	send8(data >> 8);
+ 290:XenoAT.c      **** 	send8(0);
+ 291:XenoAT.c      **** 	
+ 292:XenoAT.c      **** 	send8(2);
+ 293:XenoAT.c      **** 	send8(0);
+ 294:XenoAT.c      **** }
+ 295:XenoAT.c      **** 
+ 296:XenoAT.c      **** void write_block(long address, unsigned char *source, int len)
+ 297:XenoAT.c      **** {
+ 298:XenoAT.c      **** 	while (len >= 1) {
+ 299:XenoAT.c      **** 		write_word(address, pgm_read_byte(source) | (pgm_read_byte(source+1) << 8));
+ 300:XenoAT.c      **** 		address += 2;
+ 301:XenoAT.c      **** 		len -= 2;
+ 302:XenoAT.c      **** 		source += 2;
+ 303:XenoAT.c      **** 	}
+ 304:XenoAT.c      **** } 
+ 305:XenoAT.c      **** 
+ 306:XenoAT.c      **** void reset()
+ 307:XenoAT.c      **** {
+ 292               		.stabn	68,0,307,.LM20-.LFBB5
+ 293               	.LM20:
+ 294               	.LFBB5:
+ 295               	/* prologue: function */
+ 296               	/* frame size = 0 */
+ 297               	/* stack size = 0 */
+ 298               	.L__stack_usage = 0
+ 308:XenoAT.c      ****   
+ 309:XenoAT.c      ****   	#define soft_reset()        
+ 310:XenoAT.c      ****    	wdt_enable(WDTO_15MS);  
+ 299               		.stabn	68,0,310,.LM21-.LFBB5
+ 300               	.LM21:
+ 301 006a 28E0      		ldi r18,lo8(8)
+ 302 006c 88E1      		ldi r24,lo8(24)
+ 303 006e 90E0      		ldi r25,0
+ 304               	/* #APP */
+ 305               	 ;  310 "XenoAT.c" 1
+ 306 0070 0FB6      		in __tmp_reg__,__SREG__
+ 307 0072 F894      		cli
+ 308 0074 A895      		wdr
+ 309 0076 8093 6000 		sts 96,r24
+ 310 007a 0FBE      		out __SREG__,__tmp_reg__
+ 311 007c 2093 6000 		sts 96,r18
+ 312               		
+ 313               	 ;  0 "" 2
+ 314               	/* #NOAPP */
+ 315               	.L11:
+GAS LISTING /tmp/ccBjCewY.s 			page 12
+
+
+ 316 0080 00C0      		rjmp .L11
+ 317               		.size	reset, .-reset
+ 318               	.Lscope5:
+ 319               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 320               		.stabd	78,0,0
+ 321               		.stabs	"send8:F(0,47)",36,0,184,send8
+ 322               		.stabs	"c:P(0,11)",64,0,184,15
+ 323               	.global	send8
+ 324               		.type	send8, @function
+ 325               	send8:
+ 326               		.stabd	46,0,0
+ 185:XenoAT.c      **** 	int i = 0;
+ 327               		.stabn	68,0,185,.LM22-.LFBB6
+ 328               	.LM22:
+ 329               	.LFBB6:
+ 330 0082 FF92      		push r15
+ 331 0084 0F93      		push r16
+ 332 0086 1F93      		push r17
+ 333 0088 CF93      		push r28
+ 334 008a DF93      		push r29
+ 335               	/* prologue: function */
+ 336               	/* frame size = 0 */
+ 337               	/* stack size = 5 */
+ 338               	.L__stack_usage = 5
+ 339 008c F82E      		mov r15,r24
+ 188:XenoAT.c      **** 	for (i=0; i<8; ++i)
+ 340               		.stabn	68,0,188,.LM23-.LFBB6
+ 341               	.LM23:
+ 342 008e 22E1      		ldi r18,lo8(18)
+ 343 0090 37E2      		ldi r19,lo8(39)
+ 344               	.L13:
+ 188:XenoAT.c      **** 	for (i=0; i<8; ++i)
+ 345               		.stabn	68,0,188,.LM24-.LFBB6
+ 346               	.LM24:
+ 347 0092 199B      		sbis 0x3,1
+ 348 0094 00C0      		rjmp .L19
+ 349 0096 2150      		subi r18,1
+ 350 0098 3109      		sbc r19,__zero_reg__
+ 188:XenoAT.c      **** 	for (i=0; i<8; ++i)
+ 351               		.stabn	68,0,188,.LM25-.LFBB6
+ 352               	.LM25:
+ 353 009a 2115      		cp r18,__zero_reg__
+ 354 009c 3105      		cpc r19,__zero_reg__
+ 355 009e 01F4      		brne .L13
+ 356               	.L16:
+ 188:XenoAT.c      **** 	for (i=0; i<8; ++i)
+ 357               		.stabn	68,0,188,.LM26-.LFBB6
+ 358               	.LM26:
+ 359 00a0 0E94 0000 		call reset
+ 360               	.L19:
+ 188:XenoAT.c      **** 	for (i=0; i<8; ++i)
+ 361               		.stabn	68,0,188,.LM27-.LFBB6
+ 362               	.LM27:
+ 363 00a4 C0E0      		ldi r28,0
+ 364 00a6 D0E0      		ldi r29,0
+ 193:XenoAT.c      **** 	}
+ 365               		.stabn	68,0,193,.LM28-.LFBB6
+GAS LISTING /tmp/ccBjCewY.s 			page 13
+
+
+ 366               	.LM28:
+ 367 00a8 01E0      		ldi r16,lo8(1)
+ 368 00aa 10E0      		ldi r17,0
+ 369               	.L18:
+ 191:XenoAT.c      **** 			reset();
+ 370               		.stabn	68,0,191,.LM29-.LFBB6
+ 371               	.LM29:
+ 372 00ac 1999      		sbic 0x3,1
+ 373 00ae 00C0      		rjmp .L16
+ 193:XenoAT.c      **** 	}
+ 374               		.stabn	68,0,193,.LM30-.LFBB6
+ 375               	.LM30:
+ 376 00b0 C801      		movw r24,r16
+ 377 00b2 0C2E      		mov r0,r28
+ 378 00b4 00C0      		rjmp 2f
+ 379               		1:
+ 380 00b6 880F      		lsl r24
+ 381               		2:
+ 382 00b8 0A94      		dec r0
+ 383 00ba 02F4      		brpl 1b
+ 384 00bc 8F21      		and r24,r15
+ 385 00be 0E94 0000 		call io
+ 189:XenoAT.c      **** 	{
+ 386               		.stabn	68,0,189,.LM31-.LFBB6
+ 387               	.LM31:
+ 388 00c2 2196      		adiw r28,1
+ 389 00c4 C830      		cpi r28,8
+ 390 00c6 D105      		cpc r29,__zero_reg__
+ 391 00c8 01F4      		brne .L18
+ 392               	/* epilogue start */
+ 195:XenoAT.c      **** 
+ 393               		.stabn	68,0,195,.LM32-.LFBB6
+ 394               	.LM32:
+ 395 00ca DF91      		pop r29
+ 396 00cc CF91      		pop r28
+ 397 00ce 1F91      		pop r17
+ 398 00d0 0F91      		pop r16
+ 399 00d2 FF90      		pop r15
+ 400 00d4 0895      		ret
+ 401               		.size	send8, .-send8
+ 402               		.stabs	"i:r(0,1)",64,0,186,28
+ 403               		.stabn	192,0,0,.LFBB6-.LFBB6
+ 404               		.stabn	224,0,0,.Lscope6-.LFBB6
+ 405               	.Lscope6:
+ 406               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 407               		.stabd	78,0,0
+ 408               		.stabs	"write_word_norecv:F(0,47)",36,0,280,write_word_norecv
+ 409               	.global	write_word_norecv
+ 410               		.type	write_word_norecv, @function
+ 411               	write_word_norecv:
+ 412               		.stabd	46,0,0
+ 281:XenoAT.c      **** 	send8(0xfe);
+ 413               		.stabn	68,0,281,.LM33-.LFBB7
+ 414               	.LM33:
+ 415               	.LFBB7:
+ 416 00d6 1F93      		push r17
+ 417 00d8 CF93      		push r28
+GAS LISTING /tmp/ccBjCewY.s 			page 14
+
+
+ 418 00da DF93      		push r29
+ 419 00dc 00D0      		rcall .
+ 420 00de 00D0      		rcall .
+ 421 00e0 CDB7      		in r28,__SP_L__
+ 422 00e2 DEB7      		in r29,__SP_H__
+ 423               	/* prologue: function */
+ 424               	/* frame size = 4 */
+ 425               	/* stack size = 7 */
+ 426               	.L__stack_usage = 7
+ 427 00e4 182F      		mov r17,r24
+ 282:XenoAT.c      **** 	send8(0x00);
+ 428               		.stabn	68,0,282,.LM34-.LFBB7
+ 429               	.LM34:
+ 430 00e6 8EEF      		ldi r24,lo8(-2)
+ 431 00e8 4B83      		std Y+3,r20
+ 432 00ea 5C83      		std Y+4,r21
+ 433 00ec 6A83      		std Y+2,r22
+ 434 00ee 7983      		std Y+1,r23
+ 435 00f0 0E94 0000 		call send8
+ 283:XenoAT.c      **** 	send8(address >> 8);
+ 436               		.stabn	68,0,283,.LM35-.LFBB7
+ 437               	.LM35:
+ 438 00f4 80E0      		ldi r24,0
+ 439 00f6 0E94 0000 		call send8
+ 284:XenoAT.c      **** 	send8(address);
+ 440               		.stabn	68,0,284,.LM36-.LFBB7
+ 441               	.LM36:
+ 442 00fa 7981      		ldd r23,Y+1
+ 443 00fc 872F      		mov r24,r23
+ 444 00fe 0E94 0000 		call send8
+ 285:XenoAT.c      **** 	
+ 445               		.stabn	68,0,285,.LM37-.LFBB7
+ 446               	.LM37:
+ 447 0102 6A81      		ldd r22,Y+2
+ 448 0104 862F      		mov r24,r22
+ 449 0106 0E94 0000 		call send8
+ 287:XenoAT.c      **** 	send8(address >> 16);
+ 450               		.stabn	68,0,287,.LM38-.LFBB7
+ 451               	.LM38:
+ 452 010a 4B81      		ldd r20,Y+3
+ 453 010c 842F      		mov r24,r20
+ 454 010e 0E94 0000 		call send8
+ 288:XenoAT.c      **** 	send8(data >> 8);
+ 455               		.stabn	68,0,288,.LM39-.LFBB7
+ 456               	.LM39:
+ 457 0112 812F      		mov r24,r17
+ 458 0114 0E94 0000 		call send8
+ 289:XenoAT.c      **** 	send8(0);
+ 459               		.stabn	68,0,289,.LM40-.LFBB7
+ 460               	.LM40:
+ 461 0118 5C81      		ldd r21,Y+4
+ 462 011a 852F      		mov r24,r21
+ 463 011c 0E94 0000 		call send8
+ 290:XenoAT.c      **** 	
+ 464               		.stabn	68,0,290,.LM41-.LFBB7
+ 465               	.LM41:
+ 466 0120 80E0      		ldi r24,0
+GAS LISTING /tmp/ccBjCewY.s 			page 15
+
+
+ 467 0122 0E94 0000 		call send8
+ 292:XenoAT.c      **** 	send8(0);
+ 468               		.stabn	68,0,292,.LM42-.LFBB7
+ 469               	.LM42:
+ 470 0126 82E0      		ldi r24,lo8(2)
+ 471 0128 0E94 0000 		call send8
+ 293:XenoAT.c      **** }
+ 472               		.stabn	68,0,293,.LM43-.LFBB7
+ 473               	.LM43:
+ 474 012c 80E0      		ldi r24,0
+ 475               	/* epilogue start */
+ 294:XenoAT.c      **** 
+ 476               		.stabn	68,0,294,.LM44-.LFBB7
+ 477               	.LM44:
+ 478 012e 0F90      		pop __tmp_reg__
+ 479 0130 0F90      		pop __tmp_reg__
+ 480 0132 0F90      		pop __tmp_reg__
+ 481 0134 0F90      		pop __tmp_reg__
+ 482 0136 DF91      		pop r29
+ 483 0138 CF91      		pop r28
+ 484 013a 1F91      		pop r17
+ 293:XenoAT.c      **** }
+ 485               		.stabn	68,0,293,.LM45-.LFBB7
+ 486               	.LM45:
+ 487 013c 0C94 0000 		jmp send8
+ 488               		.size	write_word_norecv, .-write_word_norecv
+ 489               	.Lscope7:
+ 490               		.stabs	"",36,0,0,.Lscope7-.LFBB7
+ 491               		.stabd	78,0,0
+ 492               		.stabs	"recv8:F(0,11)",36,0,197,recv8
+ 493               	.global	recv8
+ 494               		.type	recv8, @function
+ 495               	recv8:
+ 496               		.stabd	46,0,0
+ 198:XenoAT.c      **** 	unsigned char x = 0;
+ 497               		.stabn	68,0,198,.LM46-.LFBB8
+ 498               	.LM46:
+ 499               	.LFBB8:
+ 500 0140 1F93      		push r17
+ 501 0142 CF93      		push r28
+ 502 0144 DF93      		push r29
+ 503               	/* prologue: function */
+ 504               	/* frame size = 0 */
+ 505               	/* stack size = 3 */
+ 506               	.L__stack_usage = 3
+ 201:XenoAT.c      **** 	for (i=0; i<8; ++i)
+ 507               		.stabn	68,0,201,.LM47-.LFBB8
+ 508               	.LM47:
+ 509 0146 82E1      		ldi r24,lo8(18)
+ 510 0148 97E2      		ldi r25,lo8(39)
+ 511               	.L22:
+ 201:XenoAT.c      **** 	for (i=0; i<8; ++i)
+ 512               		.stabn	68,0,201,.LM48-.LFBB8
+ 513               	.LM48:
+ 514 014a 1999      		sbic 0x3,1
+ 515 014c 00C0      		rjmp .L31
+ 516 014e 0197      		sbiw r24,1
+GAS LISTING /tmp/ccBjCewY.s 			page 16
+
+
+ 201:XenoAT.c      **** 	for (i=0; i<8; ++i)
+ 517               		.stabn	68,0,201,.LM49-.LFBB8
+ 518               	.LM49:
+ 519 0150 0097      		sbiw r24,0
+ 520 0152 01F4      		brne .L22
+ 521               	.L25:
+ 201:XenoAT.c      **** 	for (i=0; i<8; ++i)
+ 522               		.stabn	68,0,201,.LM50-.LFBB8
+ 523               	.LM50:
+ 524 0154 0E94 0000 		call reset
+ 525               	.L31:
+ 201:XenoAT.c      **** 	for (i=0; i<8; ++i)
+ 526               		.stabn	68,0,201,.LM51-.LFBB8
+ 527               	.LM51:
+ 528 0158 C0E0      		ldi r28,0
+ 529 015a D0E0      		ldi r29,0
+ 530 015c 10E0      		ldi r17,0
+ 531               	.L27:
+ 204:XenoAT.c      **** 			reset();
+ 532               		.stabn	68,0,204,.LM52-.LFBB8
+ 533               	.LM52:
+ 534 015e 199B      		sbis 0x3,1
+ 535 0160 00C0      		rjmp .L25
+ 206:XenoAT.c      **** 	}
+ 536               		.stabn	68,0,206,.LM53-.LFBB8
+ 537               	.LM53:
+ 538 0162 80E0      		ldi r24,0
+ 539 0164 0E94 0000 		call io
+ 540 0168 0C2E      		mov r0,r28
+ 541 016a 00C0      		rjmp 2f
+ 542               		1:
+ 543 016c 880F      		lsl r24
+ 544               		2:
+ 545 016e 0A94      		dec r0
+ 546 0170 02F4      		brpl 1b
+ 547 0172 182B      		or r17,r24
+ 202:XenoAT.c      **** 	{
+ 548               		.stabn	68,0,202,.LM54-.LFBB8
+ 549               	.LM54:
+ 550 0174 2196      		adiw r28,1
+ 551 0176 C830      		cpi r28,8
+ 552 0178 D105      		cpc r29,__zero_reg__
+ 553 017a 01F4      		brne .L27
+ 209:XenoAT.c      **** 
+ 554               		.stabn	68,0,209,.LM55-.LFBB8
+ 555               	.LM55:
+ 556 017c 812F      		mov r24,r17
+ 557               	/* epilogue start */
+ 558 017e DF91      		pop r29
+ 559 0180 CF91      		pop r28
+ 560 0182 1F91      		pop r17
+ 561 0184 0895      		ret
+ 562               		.size	recv8, .-recv8
+ 563               		.stabs	"x:r(0,11)",64,0,199,17
+ 564               		.stabs	"i:r(0,1)",64,0,200,28
+ 565               		.stabn	192,0,0,.LFBB8-.LFBB8
+ 566               		.stabn	224,0,0,.Lscope8-.LFBB8
+GAS LISTING /tmp/ccBjCewY.s 			page 17
+
+
+ 567               	.Lscope8:
+ 568               		.stabs	"",36,0,0,.Lscope8-.LFBB8
+ 569               		.stabd	78,0,0
+ 570               		.stabs	"read_mem:F(0,1)",36,0,231,read_mem
+ 571               		.stabs	"len:P(0,1)",64,0,231,16
+ 572               	.global	read_mem
+ 573               		.type	read_mem, @function
+ 574               	read_mem:
+ 575               		.stabd	46,0,0
+ 232:XenoAT.c      **** 	send8(0xff);
+ 576               		.stabn	68,0,232,.LM56-.LFBB9
+ 577               	.LM56:
+ 578               	.LFBB9:
+ 579 0186 CF92      		push r12
+ 580 0188 DF92      		push r13
+ 581 018a FF92      		push r15
+ 582 018c 0F93      		push r16
+ 583 018e 1F93      		push r17
+ 584 0190 CF93      		push r28
+ 585 0192 DF93      		push r29
+ 586 0194 00D0      		rcall .
+ 587 0196 00D0      		rcall .
+ 588 0198 CDB7      		in r28,__SP_L__
+ 589 019a DEB7      		in r29,__SP_H__
+ 590               	/* prologue: function */
+ 591               	/* frame size = 4 */
+ 592               	/* stack size = 11 */
+ 593               	.L__stack_usage = 11
+ 594 019c F82E      		mov r15,r24
+ 595 019e 8901      		movw r16,r18
+ 233:XenoAT.c      **** 	send8(0);
+ 596               		.stabn	68,0,233,.LM57-.LFBB9
+ 597               	.LM57:
+ 598 01a0 8FEF      		ldi r24,lo8(-1)
+ 599 01a2 4A83      		std Y+2,r20
+ 600 01a4 5983      		std Y+1,r21
+ 601 01a6 6B83      		std Y+3,r22
+ 602 01a8 9C83      		std Y+4,r25
+ 603 01aa 0E94 0000 		call send8
+ 234:XenoAT.c      **** 	send8(addr >> 8);
+ 604               		.stabn	68,0,234,.LM58-.LFBB9
+ 605               	.LM58:
+ 606 01ae 80E0      		ldi r24,0
+ 607 01b0 0E94 0000 		call send8
+ 235:XenoAT.c      **** 	send8(addr);
+ 608               		.stabn	68,0,235,.LM59-.LFBB9
+ 609               	.LM59:
+ 610 01b4 5981      		ldd r21,Y+1
+ 611 01b6 852F      		mov r24,r21
+ 612 01b8 0E94 0000 		call send8
+ 236:XenoAT.c      **** 	send8(0);
+ 613               		.stabn	68,0,236,.LM60-.LFBB9
+ 614               	.LM60:
+ 615 01bc 4A81      		ldd r20,Y+2
+ 616 01be 842F      		mov r24,r20
+ 617 01c0 0E94 0000 		call send8
+ 237:XenoAT.c      **** 	send8(addr >> 16); // high
+GAS LISTING /tmp/ccBjCewY.s 			page 18
+
+
+ 618               		.stabn	68,0,237,.LM61-.LFBB9
+ 619               	.LM61:
+ 620 01c4 80E0      		ldi r24,0
+ 621 01c6 0E94 0000 		call send8
+ 238:XenoAT.c      **** 	send8(0);
+ 622               		.stabn	68,0,238,.LM62-.LFBB9
+ 623               	.LM62:
+ 624 01ca 6B81      		ldd r22,Y+3
+ 625 01cc 862F      		mov r24,r22
+ 626 01ce 0E94 0000 		call send8
+ 239:XenoAT.c      **** 	send8(0);
+ 627               		.stabn	68,0,239,.LM63-.LFBB9
+ 628               	.LM63:
+ 629 01d2 80E0      		ldi r24,0
+ 630 01d4 0E94 0000 		call send8
+ 240:XenoAT.c      **** 	
+ 631               		.stabn	68,0,240,.LM64-.LFBB9
+ 632               	.LM64:
+ 633 01d8 80E0      		ldi r24,0
+ 634 01da 0E94 0000 		call send8
+ 242:XenoAT.c      **** 	send8(0);
+ 635               		.stabn	68,0,242,.LM65-.LFBB9
+ 636               	.LM65:
+ 637 01de 802F      		mov r24,r16
+ 638 01e0 0E94 0000 		call send8
+ 243:XenoAT.c      **** 	
+ 639               		.stabn	68,0,243,.LM66-.LFBB9
+ 640               	.LM66:
+ 641 01e4 80E0      		ldi r24,0
+ 642 01e6 0E94 0000 		call send8
+ 245:XenoAT.c      **** 	err |= recv8() << 8;
+ 643               		.stabn	68,0,245,.LM67-.LFBB9
+ 644               	.LM67:
+ 645 01ea 0E94 0000 		call recv8
+ 646 01ee C82E      		mov r12,r24
+ 647 01f0 D12C      		mov r13,__zero_reg__
+ 246:XenoAT.c      **** 	
+ 648               		.stabn	68,0,246,.LM68-.LFBB9
+ 649               	.LM68:
+ 650 01f2 0E94 0000 		call recv8
+ 651 01f6 A601      		movw r20,r12
+ 652 01f8 582B      		or r21,r24
+ 248:XenoAT.c      **** 	{
+ 653               		.stabn	68,0,248,.LM69-.LFBB9
+ 654               	.LM69:
+ 655 01fa 9C81      		ldd r25,Y+4
+ 656 01fc 4115      		cp r20,__zero_reg__
+ 657 01fe 5105      		cpc r21,__zero_reg__
+ 658 0200 01F4      		brne .L36
+ 659 0202 CF2C      		mov r12,r15
+ 660 0204 D92E      		mov r13,r25
+ 661 0206 0C0D      		add r16,r12
+ 662 0208 1D1D      		adc r17,r13
+ 663               	.L34:
+ 256:XenoAT.c      **** 		*dst++ = recv8();
+ 664               		.stabn	68,0,256,.LM70-.LFBB9
+ 665               	.LM70:
+GAS LISTING /tmp/ccBjCewY.s 			page 19
+
+
+ 666 020a C016      		cp r12,r16
+ 667 020c D106      		cpc r13,r17
+ 668 020e 01F0      		breq .L37
+ 257:XenoAT.c      **** 
+ 669               		.stabn	68,0,257,.LM71-.LFBB9
+ 670               	.LM71:
+ 671 0210 0E94 0000 		call recv8
+ 672 0214 F601      		movw r30,r12
+ 673 0216 8193      		st Z+,r24
+ 674 0218 6F01      		movw r12,r30
+ 675 021a 00C0      		rjmp .L34
+ 676               	.L37:
+ 259:XenoAT.c      **** }
+ 677               		.stabn	68,0,259,.LM72-.LFBB9
+ 678               	.LM72:
+ 679 021c 80E0      		ldi r24,0
+ 680 021e 90E0      		ldi r25,0
+ 681 0220 00C0      		rjmp .L33
+ 682               	.L36:
+ 683 0222 CA01      		movw r24,r20
+ 684               	.L33:
+ 685               	/* epilogue start */
+ 260:XenoAT.c      **** 
+ 686               		.stabn	68,0,260,.LM73-.LFBB9
+ 687               	.LM73:
+ 688 0224 0F90      		pop __tmp_reg__
+ 689 0226 0F90      		pop __tmp_reg__
+ 690 0228 0F90      		pop __tmp_reg__
+ 691 022a 0F90      		pop __tmp_reg__
+ 692 022c DF91      		pop r29
+ 693 022e CF91      		pop r28
+ 694 0230 1F91      		pop r17
+ 695 0232 0F91      		pop r16
+ 696 0234 FF90      		pop r15
+ 697 0236 DF90      		pop r13
+ 698 0238 CF90      		pop r12
+ 699 023a 0895      		ret
+ 700               		.size	read_mem, .-read_mem
+ 701               	.Lscope9:
+ 702               		.stabs	"",36,0,0,.Lscope9-.LFBB9
+ 703               		.stabd	78,0,0
+ 704               		.stabs	"write_word:F(0,47)",36,0,262,write_word
+ 705               	.global	write_word
+ 706               		.type	write_word, @function
+ 707               	write_word:
+ 708               		.stabd	46,0,0
+ 263:XenoAT.c      **** 	send8(0xfe);
+ 709               		.stabn	68,0,263,.LM74-.LFBB10
+ 710               	.LM74:
+ 711               	.LFBB10:
+ 712 023c 1F93      		push r17
+ 713 023e CF93      		push r28
+ 714 0240 DF93      		push r29
+ 715 0242 00D0      		rcall .
+ 716 0244 00D0      		rcall .
+ 717 0246 CDB7      		in r28,__SP_L__
+ 718 0248 DEB7      		in r29,__SP_H__
+GAS LISTING /tmp/ccBjCewY.s 			page 20
+
+
+ 719               	/* prologue: function */
+ 720               	/* frame size = 4 */
+ 721               	/* stack size = 7 */
+ 722               	.L__stack_usage = 7
+ 723 024a 182F      		mov r17,r24
+ 264:XenoAT.c      **** 	send8(0x00);
+ 724               		.stabn	68,0,264,.LM75-.LFBB10
+ 725               	.LM75:
+ 726 024c 8EEF      		ldi r24,lo8(-2)
+ 727 024e 4B83      		std Y+3,r20
+ 728 0250 5C83      		std Y+4,r21
+ 729 0252 6A83      		std Y+2,r22
+ 730 0254 7983      		std Y+1,r23
+ 731 0256 0E94 0000 		call send8
+ 265:XenoAT.c      **** 	send8(address >> 8);
+ 732               		.stabn	68,0,265,.LM76-.LFBB10
+ 733               	.LM76:
+ 734 025a 80E0      		ldi r24,0
+ 735 025c 0E94 0000 		call send8
+ 266:XenoAT.c      **** 	send8(address);
+ 736               		.stabn	68,0,266,.LM77-.LFBB10
+ 737               	.LM77:
+ 738 0260 7981      		ldd r23,Y+1
+ 739 0262 872F      		mov r24,r23
+ 740 0264 0E94 0000 		call send8
+ 267:XenoAT.c      **** 	
+ 741               		.stabn	68,0,267,.LM78-.LFBB10
+ 742               	.LM78:
+ 743 0268 6A81      		ldd r22,Y+2
+ 744 026a 862F      		mov r24,r22
+ 745 026c 0E94 0000 		call send8
+ 269:XenoAT.c      **** 	send8(address >> 16);
+ 746               		.stabn	68,0,269,.LM79-.LFBB10
+ 747               	.LM79:
+ 748 0270 4B81      		ldd r20,Y+3
+ 749 0272 842F      		mov r24,r20
+ 750 0274 0E94 0000 		call send8
+ 270:XenoAT.c      **** 	send8(data >> 8);
+ 751               		.stabn	68,0,270,.LM80-.LFBB10
+ 752               	.LM80:
+ 753 0278 812F      		mov r24,r17
+ 754 027a 0E94 0000 		call send8
+ 271:XenoAT.c      **** 	send8(0);
+ 755               		.stabn	68,0,271,.LM81-.LFBB10
+ 756               	.LM81:
+ 757 027e 5C81      		ldd r21,Y+4
+ 758 0280 852F      		mov r24,r21
+ 759 0282 0E94 0000 		call send8
+ 272:XenoAT.c      **** 	
+ 760               		.stabn	68,0,272,.LM82-.LFBB10
+ 761               	.LM82:
+ 762 0286 80E0      		ldi r24,0
+ 763 0288 0E94 0000 		call send8
+ 274:XenoAT.c      **** 	send8(0);
+ 764               		.stabn	68,0,274,.LM83-.LFBB10
+ 765               	.LM83:
+ 766 028c 82E0      		ldi r24,lo8(2)
+GAS LISTING /tmp/ccBjCewY.s 			page 21
+
+
+ 767 028e 0E94 0000 		call send8
+ 275:XenoAT.c      **** 	
+ 768               		.stabn	68,0,275,.LM84-.LFBB10
+ 769               	.LM84:
+ 770 0292 80E0      		ldi r24,0
+ 771 0294 0E94 0000 		call send8
+ 277:XenoAT.c      **** }
+ 772               		.stabn	68,0,277,.LM85-.LFBB10
+ 773               	.LM85:
+ 774 0298 0E94 0000 		call recv8
+ 775 029c 0E94 0000 		call recv8
+ 776 02a0 0E94 0000 		call recv8
+ 777               	/* epilogue start */
+ 278:XenoAT.c      **** 
+ 778               		.stabn	68,0,278,.LM86-.LFBB10
+ 779               	.LM86:
+ 780 02a4 0F90      		pop __tmp_reg__
+ 781 02a6 0F90      		pop __tmp_reg__
+ 782 02a8 0F90      		pop __tmp_reg__
+ 783 02aa 0F90      		pop __tmp_reg__
+ 784 02ac DF91      		pop r29
+ 785 02ae CF91      		pop r28
+ 786 02b0 1F91      		pop r17
+ 277:XenoAT.c      **** }
+ 787               		.stabn	68,0,277,.LM87-.LFBB10
+ 788               	.LM87:
+ 789 02b2 0C94 0000 		jmp recv8
+ 790               		.size	write_word, .-write_word
+ 791               	.Lscope10:
+ 792               		.stabs	"",36,0,0,.Lscope10-.LFBB10
+ 793               		.stabd	78,0,0
+ 794               		.stabs	"write_block:F(0,47)",36,0,296,write_block
+ 795               		.stabs	"address:P(0,3)",64,0,296,12
+ 796               		.stabs	"source:P(0,51)=*(0,11)",64,0,296,28
+ 797               		.stabs	"len:P(0,1)",64,0,296,16
+ 798               	.global	write_block
+ 799               		.type	write_block, @function
+ 800               	write_block:
+ 801               		.stabd	46,0,0
+ 297:XenoAT.c      **** 	while (len >= 1) {
+ 802               		.stabn	68,0,297,.LM88-.LFBB11
+ 803               	.LM88:
+ 804               	.LFBB11:
+ 805 02b6 CF92      		push r12
+ 806 02b8 DF92      		push r13
+ 807 02ba EF92      		push r14
+ 808 02bc FF92      		push r15
+ 809 02be 0F93      		push r16
+ 810 02c0 1F93      		push r17
+ 811 02c2 CF93      		push r28
+ 812 02c4 DF93      		push r29
+ 813               	/* prologue: function */
+ 814               	/* frame size = 0 */
+ 815               	/* stack size = 8 */
+ 816               	.L__stack_usage = 8
+ 817 02c6 6B01      		movw r12,r22
+ 818 02c8 7C01      		movw r14,r24
+GAS LISTING /tmp/ccBjCewY.s 			page 22
+
+
+ 819 02ca EA01      		movw r28,r20
+ 820 02cc 8901      		movw r16,r18
+ 821               	.L40:
+ 298:XenoAT.c      **** 		write_word(address, pgm_read_byte(source) | (pgm_read_byte(source+1) << 8));
+ 822               		.stabn	68,0,298,.LM89-.LFBB11
+ 823               	.LM89:
+ 824 02ce 1016      		cp __zero_reg__,r16
+ 825 02d0 1106      		cpc __zero_reg__,r17
+ 826 02d2 04F4      		brge .L42
+ 827               	.LBB6:
+ 299:XenoAT.c      **** 		address += 2;
+ 828               		.stabn	68,0,299,.LM90-.LFBB11
+ 829               	.LM90:
+ 830 02d4 FE01      		movw r30,r28
+ 831               	/* #APP */
+ 832               	 ;  299 "XenoAT.c" 1
+ 833 02d6 4491      		lpm r20, Z
+ 834               		
+ 835               	 ;  0 "" 2
+ 836               	/* #NOAPP */
+ 837 02d8 3196      		adiw r30,1
+ 838               	.LBE6:
+ 839               	.LBB7:
+ 840               	/* #APP */
+ 841               	 ;  299 "XenoAT.c" 1
+ 842 02da E491      		lpm r30, Z
+ 843               		
+ 844               	 ;  0 "" 2
+ 845               	/* #NOAPP */
+ 846               	.LBE7:
+ 847 02dc 50E0      		ldi r21,0
+ 848 02de 5E2B      		or r21,r30
+ 849 02e0 C701      		movw r24,r14
+ 850 02e2 B601      		movw r22,r12
+ 851 02e4 0E94 0000 		call write_word
+ 300:XenoAT.c      **** 		len -= 2;
+ 852               		.stabn	68,0,300,.LM91-.LFBB11
+ 853               	.LM91:
+ 854 02e8 F2E0      		ldi r31,2
+ 855 02ea CF0E      		add r12,r31
+ 856 02ec D11C      		adc r13,__zero_reg__
+ 857 02ee E11C      		adc r14,__zero_reg__
+ 858 02f0 F11C      		adc r15,__zero_reg__
+ 301:XenoAT.c      **** 		source += 2;
+ 859               		.stabn	68,0,301,.LM92-.LFBB11
+ 860               	.LM92:
+ 861 02f2 0250      		subi r16,2
+ 862 02f4 1109      		sbc r17,__zero_reg__
+ 302:XenoAT.c      **** 	}
+ 863               		.stabn	68,0,302,.LM93-.LFBB11
+ 864               	.LM93:
+ 865 02f6 2296      		adiw r28,2
+ 866 02f8 00C0      		rjmp .L40
+ 867               	.L42:
+ 868               	/* epilogue start */
+ 304:XenoAT.c      **** 
+ 869               		.stabn	68,0,304,.LM94-.LFBB11
+GAS LISTING /tmp/ccBjCewY.s 			page 23
+
+
+ 870               	.LM94:
+ 871 02fa DF91      		pop r29
+ 872 02fc CF91      		pop r28
+ 873 02fe 1F91      		pop r17
+ 874 0300 0F91      		pop r16
+ 875 0302 FF90      		pop r15
+ 876 0304 EF90      		pop r14
+ 877 0306 DF90      		pop r13
+ 878 0308 CF90      		pop r12
+ 879 030a 0895      		ret
+ 880               		.size	write_block, .-write_block
+ 881               	.Lscope11:
+ 882               		.stabs	"",36,0,0,.Lscope11-.LFBB11
+ 883               		.stabd	78,0,0
+ 884               		.stabs	"ldelay:F(0,47)",36,0,316,ldelay
+ 885               		.stabs	"i:p(0,52)=B(0,1)",160,0,316,1
+ 886               	.global	ldelay
+ 887               		.type	ldelay, @function
+ 888               	ldelay:
+ 889               		.stabd	46,0,0
+ 311:XenoAT.c      **** 	sputs("RESET!\n");
+ 312:XenoAT.c      **** //	WDTCR = 8;
+ 313:XenoAT.c      **** 	while (1);
+ 314:XenoAT.c      **** }
+ 315:XenoAT.c      **** 
+ 316:XenoAT.c      **** void ldelay(volatile int i)
+ 317:XenoAT.c      **** {
+ 890               		.stabn	68,0,317,.LM95-.LFBB12
+ 891               	.LM95:
+ 892               	.LFBB12:
+ 893 030c CF93      		push r28
+ 894 030e DF93      		push r29
+ 895 0310 00D0      		rcall .
+ 896 0312 CDB7      		in r28,__SP_L__
+ 897 0314 DEB7      		in r29,__SP_H__
+ 898               	/* prologue: function */
+ 899               	/* frame size = 2 */
+ 900               	/* stack size = 4 */
+ 901               	.L__stack_usage = 4
+ 902 0316 9A83      		std Y+2,r25
+ 903 0318 8983      		std Y+1,r24
+ 904               	.L45:
+ 318:XenoAT.c      **** 	while (i--) {
+ 905               		.stabn	68,0,318,.LM96-.LFBB12
+ 906               	.LM96:
+ 907 031a 8981      		ldd r24,Y+1
+ 908 031c 9A81      		ldd r25,Y+2
+ 909 031e 9C01      		movw r18,r24
+ 910 0320 2150      		subi r18,1
+ 911 0322 3109      		sbc r19,__zero_reg__
+ 912 0324 3A83      		std Y+2,r19
+ 913 0326 2983      		std Y+1,r18
+ 914 0328 892B      		or r24,r25
+ 915 032a 01F4      		brne .L45
+ 916               	/* epilogue start */
+ 319:XenoAT.c      **** //		if (X_STR_PIN & X_STR)
+ 320:XenoAT.c      **** //			reset();
+GAS LISTING /tmp/ccBjCewY.s 			page 24
+
+
+ 321:XenoAT.c      **** 	}
+ 322:XenoAT.c      **** }
+ 917               		.stabn	68,0,322,.LM97-.LFBB12
+ 918               	.LM97:
+ 919 032c 0F90      		pop __tmp_reg__
+ 920 032e 0F90      		pop __tmp_reg__
+ 921 0330 DF91      		pop r29
+ 922 0332 CF91      		pop r28
+ 923 0334 0895      		ret
+ 924               		.size	ldelay, .-ldelay
+ 925               	.Lscope12:
+ 926               		.stabs	"",36,0,0,.Lscope12-.LFBB12
+ 927               		.stabd	78,0,0
+ 928               		.section	.text.startup,"ax",@progbits
+ 929               		.stabs	"main:F(0,1)",36,0,358,main
+ 930               	.global	main
+ 931               		.type	main, @function
+ 932               	main:
+ 933               		.stabd	46,0,0
+ 323:XenoAT.c      **** 
+ 324:XenoAT.c      **** 
+ 325:XenoAT.c      **** /*
+ 326:XenoAT.c      **** void sleep(int nMs)
+ 327:XenoAT.c      **** {
+ 328:XenoAT.c      **** 	while(--nMs != 0) {
+ 329:XenoAT.c      **** 		ldelay(250);
+ 330:XenoAT.c      **** 		if (X_STR_PIN & X_STR)
+ 331:XenoAT.c      **** 			reset();
+ 332:XenoAT.c      **** 	}
+ 333:XenoAT.c      **** }
+ 334:XenoAT.c      **** 
+ 335:XenoAT.c      **** #define BLUE	0
+ 336:XenoAT.c      **** #define RED		1
+ 337:XenoAT.c      **** 
+ 338:XenoAT.c      **** void sleepOrg(int nMs)
+ 339:XenoAT.c      **** {
+ 340:XenoAT.c      **** 	while(--nMs != 0) {
+ 341:XenoAT.c      **** 		ldelay(250);
+ 342:XenoAT.c      **** 	}
+ 343:XenoAT.c      **** }
+ 344:XenoAT.c      **** 
+ 345:XenoAT.c      **** void FlashLED(u8 bLed, int nTimes)
+ 346:XenoAT.c      **** {
+ 347:XenoAT.c      **** 	while(nTimes-->0) {
+ 348:XenoAT.c      **** 		if(bLed == 0)	LED1_ON;
+ 349:XenoAT.c      **** 		else			LED2_ON;
+ 350:XenoAT.c      **** 		sleep(10);
+ 351:XenoAT.c      **** 		if(bLed == 0)	LED1_OFF;
+ 352:XenoAT.c      **** 		else			LED2_OFF;
+ 353:XenoAT.c      **** 		sleep(10);
+ 354:XenoAT.c      **** 	}
+ 355:XenoAT.c      **** }
+ 356:XenoAT.c      **** */
+ 357:XenoAT.c      **** 
+ 358:XenoAT.c      **** int main(void)
+ 359:XenoAT.c      **** {
+ 934               		.stabn	68,0,359,.LM98-.LFBB13
+GAS LISTING /tmp/ccBjCewY.s 			page 25
+
+
+ 935               	.LM98:
+ 936               	.LFBB13:
+ 937 0000 CF93      		push r28
+ 938 0002 DF93      		push r29
+ 939 0004 00D0      		rcall .
+ 940 0006 CDB7      		in r28,__SP_L__
+ 941 0008 DEB7      		in r29,__SP_H__
+ 942               	/* prologue: function */
+ 943               	/* frame size = 2 */
+ 944               	/* stack size = 4 */
+ 945               	.L__stack_usage = 4
+ 360:XenoAT.c      **** 	const unsigned int	qcodesize	= ((((const unsigned int) &qcode_end)	- ((const  unsigned int) &qcode
+ 361:XenoAT.c      **** 	const unsigned int	uploadsize	= ((((const unsigned int) &upload_end)	- ((const  unsigned int) &upl
+ 946               		.stabn	68,0,361,.LM99-.LFBB13
+ 947               	.LM99:
+ 948 000a 60E0      		ldi r22,lo8(upload_end)
+ 949 000c E62E      		mov r14,r22
+ 950 000e 60E0      		ldi r22,hi8(upload_end)
+ 951 0010 F62E      		mov r15,r22
+ 952 0012 C701      		movw r24,r14
+ 953 0014 8050      		subi r24,lo8(upload)
+ 954 0016 9040      		sbci r25,hi8(upload)
+ 955 0018 7C01      		movw r14,r24
+ 956 001a E894      		clt
+ 957 001c E0F8      		bld r14,0
+ 958 001e 92E0      		ldi r25,2
+ 959 0020 E90E      		add r14,r25
+ 960 0022 F11C      		adc r15,__zero_reg__
+ 362:XenoAT.c      **** //	const unsigned int	creditssize = ((((const unsigned int) &credits_end)	- ((const  unsigned int) 
+ 363:XenoAT.c      **** 	const unsigned int	creditssize = ((((const unsigned int) &credits_end)	- ((const  unsigned int) &c
+ 364:XenoAT.c      **** 
+ 365:XenoAT.c      **** 	unsigned short last_recv=0;
+ 366:XenoAT.c      **** 
+ 367:XenoAT.c      **** 	LED_INIT;
+ 961               		.stabn	68,0,367,.LM100-.LFBB13
+ 962               	.LM100:
+ 963 0024 8CE0      		ldi r24,lo8(12)
+ 964 0026 8AB9      		out 0xa,r24
+ 368:XenoAT.c      **** #ifndef RELEASE	
+ 369:XenoAT.c      **** 	USART_Init(103);
+ 370:XenoAT.c      **** #endif
+ 371:XenoAT.c      **** 	
+ 372:XenoAT.c      **** 	int i;
+ 373:XenoAT.c      **** 	X_OUT_PORT &= ~(X_CLK|X_OUT|X_IN);
+ 965               		.stabn	68,0,373,.LM101-.LFBB13
+ 966               	.LM101:
+ 967 0028 85B1      		in r24,0x5
+ 968 002a 877C      		andi r24,lo8(-57)
+ 969 002c 85B9      		out 0x5,r24
+ 374:XenoAT.c      **** 	X_STR_PORT |= X_STR;
+ 970               		.stabn	68,0,374,.LM102-.LFBB13
+ 971               	.LM102:
+ 972 002e 299A      		sbi 0x5,1
+ 375:XenoAT.c      **** 	X_OUT_DDR = 2 | X_CLK | X_OUT | 0x80;
+ 973               		.stabn	68,0,375,.LM103-.LFBB13
+ 974               	.LM103:
+ 975 0030 82EB      		ldi r24,lo8(-78)
+GAS LISTING /tmp/ccBjCewY.s 			page 26
+
+
+ 976 0032 84B9      		out 0x4,r24
+ 376:XenoAT.c      **** 	X_STR_DDR &= ~X_STR;
+ 977               		.stabn	68,0,376,.LM104-.LFBB13
+ 978               	.LM104:
+ 979 0034 2198      		cbi 0x4,1
+ 377:XenoAT.c      **** 	
+ 378:XenoAT.c      **** 	// VCC/GND not present: no leds
+ 379:XenoAT.c      **** 	// CLK missing: will be kept in first stage
+ 380:XenoAT.c      **** 	// DIN missing: will be kept in second stage
+ 381:XenoAT.c      **** 	// DOUT missing: will always reset
+ 382:XenoAT.c      **** 	// 1 0
+ 383:XenoAT.c      **** 	// 1 1
+ 384:XenoAT.c      **** 	// 0 0
+ 385:XenoAT.c      **** 	// 0 1
+ 386:XenoAT.c      **** 	LED2_ON; LED1_OFF; 	// -> red
+ 980               		.stabn	68,0,386,.LM105-.LFBB13
+ 981               	.LM105:
+ 982 0036 5B98      		cbi 0xb,3
+ 983 0038 5A9A      		sbi 0xb,2
+ 365:XenoAT.c      **** 
+ 984               		.stabn	68,0,365,.LM106-.LFBB13
+ 985               	.LM106:
+ 986 003a 80E0      		ldi r24,0
+ 987 003c 90E0      		ldi r25,0
+ 988               	.L49:
+ 387:XenoAT.c      **** 
+ 388:XenoAT.c      **** 	sputs("syncing..\n");
+ 389:XenoAT.c      **** 	while (1) {
+ 390:XenoAT.c      **** 		last_recv >>= 1;
+ 989               		.stabn	68,0,390,.LM107-.LFBB13
+ 990               	.LM107:
+ 991 003e 8C01      		movw r16,r24
+ 992 0040 1695      		lsr r17
+ 993 0042 0795      		ror r16
+ 391:XenoAT.c      **** 		last_recv |= io(1) ? 0x8000 : 0;
+ 994               		.stabn	68,0,391,.LM108-.LFBB13
+ 995               	.LM108:
+ 996 0044 81E0      		ldi r24,lo8(1)
+ 997 0046 0E94 0000 		call io
+ 998 004a 892B      		or r24,r25
+ 999 004c 01F0      		breq .L57
+ 1000 004e 20E0      		ldi r18,0
+ 1001 0050 30E8      		ldi r19,lo8(-128)
+ 1002 0052 00C0      		rjmp .L47
+ 1003               	.L57:
+ 1004 0054 20E0      		ldi r18,0
+ 1005 0056 30E0      		ldi r19,0
+ 1006               	.L47:
+ 1007               		.stabn	68,0,391,.LM109-.LFBB13
+ 1008               	.LM109:
+ 1009 0058 C901      		movw r24,r18
+ 1010 005a 802B      		or r24,r16
+ 1011 005c 912B      		or r25,r17
+ 392:XenoAT.c      **** //		sputhex16(last_recv); sputs("\n");
+ 393:XenoAT.c      **** 		if (last_recv == 0xeeee)
+ 1012               		.stabn	68,0,393,.LM110-.LFBB13
+ 1013               	.LM110:
+GAS LISTING /tmp/ccBjCewY.s 			page 27
+
+
+ 1014 005e 8E3E      		cpi r24,-18
+ 1015 0060 EEEE      		ldi r30,-18
+ 1016 0062 9E07      		cpc r25,r30
+ 1017 0064 01F4      		brne .L49
+ 394:XenoAT.c      **** 		  break;
+ 395:XenoAT.c      **** 	}
+ 396:XenoAT.c      **** 	sputs("sync ok.\n");
+ 397:XenoAT.c      **** 
+ 398:XenoAT.c      **** 	// stack-friendly loading :p
+ 399:XenoAT.c      **** 	const static u8 PROGMEM pLoaderCode[] =	{	0x80, 0x00,					//  8000		MOV	$00,D0				
+ 400:XenoAT.c      **** 											0xC4, 0xDA, 0xFC,			//  C4DAFC		MOVB	D0,($FCDA)	# disable breakpoints
+ 401:XenoAT.c      **** 								
+ 402:XenoAT.c      **** 											0xF4,0x74,0x74,0x0a,0x08,	//	F47474A708  MOV	$080a74,a0		# restore original 
+ 403:XenoAT.c      **** 											0xF7,0x20,0x4C,0x80,		//	F7204C80    MOV	a0,($804c)		# inthandler
+ 404:XenoAT.c      **** 											0xF4,0x74,					//	F47400D040  MOV	QCODEIMGBASE,a0	# jump to drivecode init
+ 405:XenoAT.c      **** 											(LOADER_ADDR		& 0xFF),				
+ 406:XenoAT.c      **** 											(LOADER_ADDR >> 8	& 0xFF),
+ 407:XenoAT.c      **** 											(LOADER_ADDR >> 16	& 0xFF),		
+ 408:XenoAT.c      **** 											0xF0,0x00					//	F000        JMP	(a0)
+ 409:XenoAT.c      **** 	};
+ 410:XenoAT.c      **** 
+ 411:XenoAT.c      **** 	u8* pUpload = qcode;
+ 412:XenoAT.c      **** 	u16 wUploadSize = qcodesize;
+ 413:XenoAT.c      **** 
+ 414:XenoAT.c      **** 	u16 wTest = 0;
+ 1018               		.stabn	68,0,414,.LM111-.LFBB13
+ 1019               	.LM111:
+ 1020 0066 1A82      		std Y+2,__zero_reg__
+ 1021 0068 1982      		std Y+1,__zero_reg__
+ 415:XenoAT.c      **** 	read_mem(&wTest, 0x40D100, 2);
+ 1022               		.stabn	68,0,415,.LM112-.LFBB13
+ 1023               	.LM112:
+ 1024 006a 22E0      		ldi r18,lo8(2)
+ 1025 006c 30E0      		ldi r19,0
+ 1026 006e 40E0      		ldi r20,0
+ 1027 0070 51ED      		ldi r21,lo8(-47)
+ 1028 0072 60E4      		ldi r22,lo8(64)
+ 1029 0074 70E0      		ldi r23,0
+ 1030 0076 CE01      		movw r24,r28
+ 1031 0078 0196      		adiw r24,1
+ 1032 007a 0E94 0000 		call read_mem
+ 416:XenoAT.c      **** 
+ 417:XenoAT.c      **** 	if(wTest == 0x4444) {
+ 1033               		.stabn	68,0,417,.LM113-.LFBB13
+ 1034               	.LM113:
+ 1035 007e 8981      		ldd r24,Y+1
+ 1036 0080 9A81      		ldd r25,Y+2
+ 1037 0082 8434      		cpi r24,68
+ 1038 0084 9444      		sbci r25,68
+ 1039 0086 01F0      		breq .L50
+ 360:XenoAT.c      **** 	const unsigned int	uploadsize	= ((((const unsigned int) &upload_end)	- ((const  unsigned int) &upl
+ 1040               		.stabn	68,0,360,.LM114-.LFBB13
+ 1041               	.LM114:
+ 1042 0088 00E0      		ldi r16,lo8(qcode_end)
+ 1043 008a 10E0      		ldi r17,hi8(qcode_end)
+ 1044 008c 0050      		subi r16,lo8(qcode)
+ 1045 008e 1040      		sbci r17,hi8(qcode)
+GAS LISTING /tmp/ccBjCewY.s 			page 28
+
+
+ 1046 0090 0E7F      		andi r16,254
+ 412:XenoAT.c      **** 
+ 1047               		.stabn	68,0,412,.LM115-.LFBB13
+ 1048               	.LM115:
+ 1049 0092 0E5F      		subi r16,-2
+ 1050 0094 1F4F      		sbci r17,-1
+ 411:XenoAT.c      **** 	u16 wUploadSize = qcodesize;
+ 1051               		.stabn	68,0,411,.LM116-.LFBB13
+ 1052               	.LM116:
+ 1053 0096 40E0      		ldi r20,lo8(qcode)
+ 1054 0098 A42E      		mov r10,r20
+ 1055 009a 40E0      		ldi r20,hi8(qcode)
+ 1056 009c B42E      		mov r11,r20
+ 1057 009e 00C0      		rjmp .L51
+ 1058               	.L50:
+ 363:XenoAT.c      **** 
+ 1059               		.stabn	68,0,363,.LM117-.LFBB13
+ 1060               	.LM117:
+ 1061 00a0 00E0      		ldi r16,lo8(credits_end)
+ 1062 00a2 10E0      		ldi r17,hi8(credits_end)
+ 1063 00a4 0050      		subi r16,lo8(credits)
+ 1064 00a6 1040      		sbci r17,hi8(credits)
+ 1065 00a8 0E7F      		andi r16,254
+ 1066 00aa 0E5F      		subi r16,-2
+ 1067 00ac 1F4F      		sbci r17,-1
+ 418:XenoAT.c      **** 		pUpload = credits;
+ 1068               		.stabn	68,0,418,.LM118-.LFBB13
+ 1069               	.LM118:
+ 1070 00ae 30E0      		ldi r19,lo8(credits)
+ 1071 00b0 A32E      		mov r10,r19
+ 1072 00b2 30E0      		ldi r19,hi8(credits)
+ 1073 00b4 B32E      		mov r11,r19
+ 1074               	.L51:
+ 419:XenoAT.c      **** 		wUploadSize = creditssize;
+ 420:XenoAT.c      **** 	}
+ 421:XenoAT.c      **** 
+ 422:XenoAT.c      **** 	write_block(LOADER_ADDR, upload, uploadsize);
+ 1075               		.stabn	68,0,422,.LM119-.LFBB13
+ 1076               	.LM119:
+ 1077 00b6 9701      		movw r18,r14
+ 1078 00b8 40E0      		ldi r20,lo8(upload)
+ 1079 00ba 50E0      		ldi r21,hi8(upload)
+ 1080 00bc 60E0      		ldi r22,0
+ 1081 00be 70ED      		ldi r23,lo8(-48)
+ 1082 00c0 80E4      		ldi r24,lo8(64)
+ 1083 00c2 90E0      		ldi r25,0
+ 1084 00c4 0E94 0000 		call write_block
+ 423:XenoAT.c      **** 	write_block(0x8674, pLoaderCode, sizeof(pLoaderCode));
+ 1085               		.stabn	68,0,423,.LM120-.LFBB13
+ 1086               	.LM120:
+ 1087 00c8 25E1      		ldi r18,lo8(21)
+ 1088 00ca 30E0      		ldi r19,0
+ 1089 00cc 40E0      		ldi r20,lo8(pLoaderCode.1983)
+ 1090 00ce 50E0      		ldi r21,hi8(pLoaderCode.1983)
+ 1091 00d0 64E7      		ldi r22,lo8(116)
+ 1092 00d2 76E8      		ldi r23,lo8(-122)
+ 1093 00d4 80E0      		ldi r24,0
+GAS LISTING /tmp/ccBjCewY.s 			page 29
+
+
+ 1094 00d6 90E0      		ldi r25,0
+ 1095 00d8 0E94 0000 		call write_block
+ 424:XenoAT.c      **** 	write_word_norecv(0x804d, 0x0086);
+ 1096               		.stabn	68,0,424,.LM121-.LFBB13
+ 1097               	.LM121:
+ 1098 00dc 46E8      		ldi r20,lo8(-122)
+ 1099 00de 50E0      		ldi r21,0
+ 1100 00e0 6DE4      		ldi r22,lo8(77)
+ 1101 00e2 70E8      		ldi r23,lo8(-128)
+ 1102 00e4 80E0      		ldi r24,0
+ 1103 00e6 90E0      		ldi r25,0
+ 1104 00e8 0E94 0000 		call write_word_norecv
+ 425:XenoAT.c      **** 
+ 426:XenoAT.c      **** 
+ 427:XenoAT.c      **** 	char u8Ret = io8(0x00);
+ 1105               		.stabn	68,0,427,.LM122-.LFBB13
+ 1106               	.LM122:
+ 1107 00ec 80E0      		ldi r24,0
+ 1108 00ee 0E94 0000 		call io8
+ 428:XenoAT.c      **** 	ndelay = 1;
+ 1109               		.stabn	68,0,428,.LM123-.LFBB13
+ 1110               	.LM123:
+ 1111 00f2 81E0      		ldi r24,lo8(1)
+ 1112 00f4 90E0      		ldi r25,0
+ 1113 00f6 9093 0000 		sts ndelay+1,r25
+ 1114 00fa 8093 0000 		sts ndelay,r24
+ 429:XenoAT.c      **** 	
+ 430:XenoAT.c      **** 	ldelay(100);
+ 1115               		.stabn	68,0,430,.LM124-.LFBB13
+ 1116               	.LM124:
+ 1117 00fe 84E6      		ldi r24,lo8(100)
+ 1118 0100 90E0      		ldi r25,0
+ 1119 0102 0E94 0000 		call ldelay
+ 431:XenoAT.c      **** 	u8Ret |= io8(0x00);
+ 1120               		.stabn	68,0,431,.LM125-.LFBB13
+ 1121               	.LM125:
+ 1122 0106 80E0      		ldi r24,0
+ 1123 0108 0E94 0000 		call io8
+ 432:XenoAT.c      **** 
+ 433:XenoAT.c      **** 	ldelay(100);
+ 1124               		.stabn	68,0,433,.LM126-.LFBB13
+ 1125               	.LM126:
+ 1126 010c 84E6      		ldi r24,lo8(100)
+ 1127 010e 90E0      		ldi r25,0
+ 1128 0110 0E94 0000 		call ldelay
+ 434:XenoAT.c      **** 	io8((wUploadSize >> 9)&0xFF);
+ 1129               		.stabn	68,0,434,.LM127-.LFBB13
+ 1130               	.LM127:
+ 1131 0114 812F      		mov r24,r17
+ 1132 0116 8695      		lsr r24
+ 1133 0118 0E94 0000 		call io8
+ 435:XenoAT.c      **** 	ldelay(100);
+ 1134               		.stabn	68,0,435,.LM128-.LFBB13
+ 1135               	.LM128:
+ 1136 011c 84E6      		ldi r24,lo8(100)
+ 1137 011e 90E0      		ldi r25,0
+ 1138 0120 0E94 0000 		call ldelay
+GAS LISTING /tmp/ccBjCewY.s 			page 30
+
+
+ 436:XenoAT.c      **** 	io8((wUploadSize >> 1)&0xFF);
+ 1139               		.stabn	68,0,436,.LM129-.LFBB13
+ 1140               	.LM129:
+ 1141 0124 C801      		movw r24,r16
+ 1142 0126 9695      		lsr r25
+ 1143 0128 8795      		ror r24
+ 1144 012a 982E      		mov r9,r24
+ 1145 012c 0E94 0000 		call io8
+ 437:XenoAT.c      **** 	ldelay(100);
+ 1146               		.stabn	68,0,437,.LM130-.LFBB13
+ 1147               	.LM130:
+ 1148 0130 84E6      		ldi r24,lo8(100)
+ 1149 0132 90E0      		ldi r25,0
+ 1150 0134 0E94 0000 		call ldelay
+ 438:XenoAT.c      **** 	io8(0);
+ 1151               		.stabn	68,0,438,.LM131-.LFBB13
+ 1152               	.LM131:
+ 1153 0138 80E0      		ldi r24,0
+ 1154 013a 0E94 0000 		call io8
+ 439:XenoAT.c      **** 	
+ 440:XenoAT.c      **** 	LED2_OFF;
+ 1155               		.stabn	68,0,440,.LM132-.LFBB13
+ 1156               	.LM132:
+ 1157 013e 5B9A      		sbi 0xb,3
+ 441:XenoAT.c      **** 	unsigned char r, e = (wUploadSize >> 1) & 0xFF, n, csum = 0;
+ 442:XenoAT.c      **** 
+ 443:XenoAT.c      **** 	for (i=0; i < wUploadSize; ++i)	{
+ 1158               		.stabn	68,0,443,.LM133-.LFBB13
+ 1159               	.LM133:
+ 1160 0140 E12C      		mov r14,__zero_reg__
+ 1161 0142 F12C      		mov r15,__zero_reg__
+ 1162               	.L52:
+ 1163 0144 6501      		movw r12,r10
+ 1164 0146 CE0C      		add r12,r14
+ 1165 0148 DF1C      		adc r13,r15
+ 444:XenoAT.c      **** 		ldelay(100);
+ 1166               		.stabn	68,0,444,.LM134-.LFBB13
+ 1167               	.LM134:
+ 1168 014a 84E6      		ldi r24,lo8(100)
+ 1169 014c 90E0      		ldi r25,0
+ 443:XenoAT.c      **** 		ldelay(100);
+ 1170               		.stabn	68,0,443,.LM135-.LFBB13
+ 1171               	.LM135:
+ 1172 014e E016      		cp r14,r16
+ 1173 0150 F106      		cpc r15,r17
+ 1174 0152 01F0      		breq .L58
+ 1175               		.stabn	68,0,444,.LM136-.LFBB13
+ 1176               	.LM136:
+ 1177 0154 0E94 0000 		call ldelay
+ 1178               	.LBB8:
+ 445:XenoAT.c      **** 		r = io8(n = pgm_read_byte(pUpload + i));
+ 1179               		.stabn	68,0,445,.LM137-.LFBB13
+ 1180               	.LM137:
+ 1181 0158 F601      		movw r30,r12
+ 1182               	/* #APP */
+ 1183               	 ;  445 "XenoAT.c" 1
+ 1184 015a C490      		lpm r12, Z
+GAS LISTING /tmp/ccBjCewY.s 			page 31
+
+
+ 1185               		
+ 1186               	 ;  0 "" 2
+ 1187               	/* #NOAPP */
+ 1188               	.LBE8:
+ 1189 015c 8C2D      		mov r24,r12
+ 1190 015e 0E94 0000 		call io8
+ 446:XenoAT.c      **** 		csum += n;
+ 447:XenoAT.c      **** 
+ 448:XenoAT.c      **** 		if (r != e)	{
+ 1191               		.stabn	68,0,448,.LM138-.LFBB13
+ 1192               	.LM138:
+ 1193 0162 8911      		cpse r24,r9
+ 1194               	.L55:
+ 449:XenoAT.c      **** 			reset();
+ 1195               		.stabn	68,0,449,.LM139-.LFBB13
+ 1196               	.LM139:
+ 1197 0164 0E94 0000 		call reset
+ 1198               	.L53:
+ 443:XenoAT.c      **** 		ldelay(100);
+ 1199               		.stabn	68,0,443,.LM140-.LFBB13
+ 1200               	.LM140:
+ 1201 0168 FFEF      		ldi r31,-1
+ 1202 016a EF1A      		sub r14,r31
+ 1203 016c FF0A      		sbc r15,r31
+ 450:XenoAT.c      **** 		}
+ 451:XenoAT.c      **** 
+ 452:XenoAT.c      **** 		e = n;
+ 1204               		.stabn	68,0,452,.LM141-.LFBB13
+ 1205               	.LM141:
+ 1206 016e 9C2C      		mov r9,r12
+ 1207 0170 00C0      		rjmp .L52
+ 1208               	.L58:
+ 453:XenoAT.c      **** 	}
+ 454:XenoAT.c      **** 
+ 455:XenoAT.c      **** 	ldelay(100);
+ 1209               		.stabn	68,0,455,.LM142-.LFBB13
+ 1210               	.LM142:
+ 1211 0172 0E94 0000 		call ldelay
+ 1212               	.LBB9:
+ 456:XenoAT.c      **** 	pgm_read_byte(pUpload + i);
+ 1213               		.stabn	68,0,456,.LM143-.LFBB13
+ 1214               	.LM143:
+ 1215 0176 F601      		movw r30,r12
+ 1216               	/* #APP */
+ 1217               	 ;  456 "XenoAT.c" 1
+ 1218 0178 C490      		lpm r12, Z
+ 1219               		
+ 1220               	 ;  0 "" 2
+ 1221               	/* #NOAPP */
+ 1222               	.LBE9:
+ 457:XenoAT.c      **** 
+ 458:XenoAT.c      **** //	if(bUploadAgain) {
+ 459:XenoAT.c      **** //		io8(0x99);
+ 460:XenoAT.c      **** //		goto uploadAgain;
+ 461:XenoAT.c      **** //	}
+ 462:XenoAT.c      **** //	else 
+ 463:XenoAT.c      **** 	{
+GAS LISTING /tmp/ccBjCewY.s 			page 32
+
+
+ 464:XenoAT.c      **** 		io8(0x21);
+ 1223               		.stabn	68,0,464,.LM144-.LFBB13
+ 1224               	.LM144:
+ 1225 017a 81E2      		ldi r24,lo8(33)
+ 1226 017c 0E94 0000 		call io8
+ 465:XenoAT.c      **** 	}
+ 466:XenoAT.c      **** 
+ 467:XenoAT.c      **** 	io8(0);
+ 1227               		.stabn	68,0,467,.LM145-.LFBB13
+ 1228               	.LM145:
+ 1229 0180 80E0      		ldi r24,0
+ 1230 0182 0E94 0000 		call io8
+ 468:XenoAT.c      **** 	io8(0);
+ 1231               		.stabn	68,0,468,.LM146-.LFBB13
+ 1232               	.LM146:
+ 1233 0186 80E0      		ldi r24,0
+ 1234 0188 0E94 0000 		call io8
+ 469:XenoAT.c      **** 
+ 470:XenoAT.c      **** /*	if(pUpload == credits) {
+ 471:XenoAT.c      **** 		LED1_ON;
+ 472:XenoAT.c      **** 		LED2_ON;
+ 473:XenoAT.c      **** 		X_STR_PORT |= X_STR;
+ 474:XenoAT.c      **** 		while(1);
+ 475:XenoAT.c      **** 	}
+ 476:XenoAT.c      **** */
+ 477:XenoAT.c      **** 	// SUCCESS (BLUE)
+ 478:XenoAT.c      **** 	LED1_ON;
+ 1235               		.stabn	68,0,478,.LM147-.LFBB13
+ 1236               	.LM147:
+ 1237 018c 5A98      		cbi 0xb,2
+ 479:XenoAT.c      **** 	X_STR_PORT |= X_STR;
+ 1238               		.stabn	68,0,479,.LM148-.LFBB13
+ 1239               	.LM148:
+ 1240 018e 299A      		sbi 0x5,1
+ 1241               	.L56:
+ 480:XenoAT.c      **** 
+ 481:XenoAT.c      **** //	if(pUpload == credits) {
+ 482:XenoAT.c      **** //		LED1_ON;
+ 483:XenoAT.c      **** //		LED2_ON;
+ 484:XenoAT.c      **** //		sleepOrg(3000);
+ 485:XenoAT.c      **** //	}
+ 486:XenoAT.c      **** 
+ 487:XenoAT.c      **** 	while (!(X_STR_PIN & X_STR)) {
+ 1242               		.stabn	68,0,487,.LM149-.LFBB13
+ 1243               	.LM149:
+ 1244 0190 199B      		sbis 0x3,1
+ 1245 0192 00C0      		rjmp .L56
+ 1246 0194 00C0      		rjmp .L55
+ 1247               		.size	main, .-main
+ 1248               		.stabs	"uploadsize:r(0,53)=k(0,4)",64,0,361,14
+ 1249               		.stabs	"i:r(0,1)",64,0,372,14
+ 1250               		.stabs	"pLoaderCode:V(0,54)=ar(0,55)=r(0,55);0;0177777;;0;20;(0,56)=k(0,50)",38,0,399,pLoaderCode.
+ 1251               		.stabs	"pUpload:r(0,57)=*(0,50)",64,0,411,10
+ 1252               		.stabs	"wUploadSize:r(0,49)",64,0,412,16
+ 1253               		.stabs	"wTest:(0,49)",128,0,414,1
+ 1254               		.stabn	192,0,0,.LFBB13-.LFBB13
+ 1255               		.stabn	224,0,0,.Lscope13-.LFBB13
+GAS LISTING /tmp/ccBjCewY.s 			page 33
+
+
+ 1256               	.Lscope13:
+ 1257               		.stabs	"",36,0,0,.Lscope13-.LFBB13
+ 1258               		.stabd	78,0,0
+ 1259               		.section	.progmem.data,"a",@progbits
+ 1260               		.type	pLoaderCode.1983, @object
+ 1261               		.size	pLoaderCode.1983, 21
+ 1262               	pLoaderCode.1983:
+ 1263 0000 80        		.byte	-128
+ 1264 0001 00        		.byte	0
+ 1265 0002 C4        		.byte	-60
+ 1266 0003 DA        		.byte	-38
+ 1267 0004 FC        		.byte	-4
+ 1268 0005 F4        		.byte	-12
+ 1269 0006 74        		.byte	116
+ 1270 0007 74        		.byte	116
+ 1271 0008 0A        		.byte	10
+ 1272 0009 08        		.byte	8
+ 1273 000a F7        		.byte	-9
+ 1274 000b 20        		.byte	32
+ 1275 000c 4C        		.byte	76
+ 1276 000d 80        		.byte	-128
+ 1277 000e F4        		.byte	-12
+ 1278 000f 74        		.byte	116
+ 1279 0010 00        		.byte	0
+ 1280 0011 D0        		.byte	-48
+ 1281 0012 40        		.byte	64
+ 1282 0013 F0        		.byte	-16
+ 1283 0014 00        		.byte	0
+ 1284               	.global	ndelay
+ 1285               		.section .bss
+ 1286               		.type	ndelay, @object
+ 1287               		.size	ndelay, 2
+ 1288               	ndelay:
+ 1289 0000 0000      		.zero	2
+ 1290               		.stabs	"ndelay:G(0,1)",32,0,165,0
+ 1291               		.text
+ 1292               		.stabs	"",100,0,0,.Letext0
+ 1293               	.Letext0:
+ 1294               		.ident	"GCC: (GNU) 4.8.1"
+ 1295               	.global __do_clear_bss
+GAS LISTING /tmp/ccBjCewY.s 			page 34
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 XenoAT.c
+     /tmp/ccBjCewY.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccBjCewY.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccBjCewY.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccBjCewY.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccBjCewY.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccBjCewY.s:114    .init3:0000000000000000 wdt_init
+     /tmp/ccBjCewY.s:150    .text:0000000000000000 delay
+     /tmp/ccBjCewY.s:168    .text:0000000000000002 io
+     /tmp/ccBjCewY.s:214    .text:000000000000001c io8
+     /tmp/ccBjCewY.s:290    .text:000000000000006a reset
+     /tmp/ccBjCewY.s:325    .text:0000000000000082 send8
+     /tmp/ccBjCewY.s:411    .text:00000000000000d6 write_word_norecv
+     /tmp/ccBjCewY.s:495    .text:0000000000000140 recv8
+     /tmp/ccBjCewY.s:574    .text:0000000000000186 read_mem
+     /tmp/ccBjCewY.s:707    .text:000000000000023c write_word
+     /tmp/ccBjCewY.s:800    .text:00000000000002b6 write_block
+     /tmp/ccBjCewY.s:888    .text:000000000000030c ldelay
+     /tmp/ccBjCewY.s:932    .text.startup:0000000000000000 main
+     /tmp/ccBjCewY.s:1262   .progmem.data:0000000000000000 pLoaderCode.1983
+     /tmp/ccBjCewY.s:1288   .bss:0000000000000000 ndelay
+
+UNDEFINED SYMBOLS
+upload_end
+upload
+qcode_end
+qcode
+credits_end
+credits
+__do_clear_bss
