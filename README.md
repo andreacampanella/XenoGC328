@@ -1,6 +1,6 @@
 XenoGC is a modchip for the Nintendo Gamecube. 
 
-The idea is a micro sitting on the comunication bus between the cpu and the dvd driver board injecting code to patch the dvd controller to make it able to read unsigned code.
+The idea is a micro sitting on the communication bus between the cpu and the dvd driver board injecting code to patch the dvd controller to make it able to read unsigned code.
 
 The original sofware is been released as opensource here:
 
