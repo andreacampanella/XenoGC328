@@ -6,14 +6,20 @@
 #include <string.h>
 #include "qCode.h"
 #include <avr/wdt.h>
-// Function Pototype
+
+//Remember to set the cpu fuse to 8MHZ internal , because of the nature of the code ATM, the loop timigs are dictated from the Clock Frequency.
+
+// Watchdog Function Pototype
 void wdt_init(void) __attribute__((naked)) __attribute__((section(".init3")));
 
 typedef unsigned long  u32;
 typedef unsigned short u16;
 typedef unsigned char  u8;
 
+//disable this to have debug info on the serial port.
 #define RELEASE
+
+
 #define LOADER_ADDR 0x40D000
 
 #define VER2	// VER1 VER2
@@ -49,27 +55,34 @@ typedef unsigned char  u8;
 
 
 #else
+//SPI_MOSI, pin 11 on the arduino
 #define X_OUT 0x10
 #define X_OUT_PORT PORTB
 #define X_OUT_PIN PINB
 #define X_OUT_DDR DDRB
+
+//SPI_CLK, pin 13 on the arduino (with LED)
 #define X_CLK 0x20
 #define X_CLK_PORT PORTB
 #define X_CLK_PIN PINB
 #define X_CLK_DDR DDRB
+
+//SPI_MISO, pin 12 on the arduino
 #define X_IN  0x08
 #define X_IN_PORT  PORTB
 #define X_IN_PIN  PINB
 #define X_IN_DDR  DDRB
+
+//GPIO, pin 15 on the arduino
 #define X_STR 0x02
 #define X_STR_PORT PORTB
 #define X_STR_PIN PINB
 #define X_STR_DDR DDRB
 
-// green
+// green PIN 2 on the arduino
 #define LED1_ON   PORTD &=~0x04
 #define LED1_OFF  PORTD |= 0x04
-// red
+// red   Pin 3 on the arduino
 #define LED2_ON   PORTD &=~0x08
 #define LED2_OFF  PORTD |= 0x08
 #define LED_INIT  DDRD = 0x0C;
