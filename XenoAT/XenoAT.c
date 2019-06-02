@@ -1,11 +1,18 @@
 #include <avr/io.h>
-#include <avr/signal.h>
+//#include <avr/signal.h>
 #include <avr/interrupt.h>
 #include <avr/pgmspace.h>
 #include <math.h>
 #include <string.h>
 #include "qCode.h"
 #include <avr/wdt.h>
+#define nop() \
+   asm volatile ("nop")
+
+#define	USART0_BAUD 9600
+#ifndef F_CPU
+   #define F_CPU 8000000UL     
+#endif 
 
 //Remember to set the cpu fuse to 8MHZ internal , because of the nature of the code ATM, the loop timigs are dictated from the Clock Frequency.
 
@@ -17,7 +24,7 @@ typedef unsigned short u16;
 typedef unsigned char  u8;
 
 //disable this to have debug info on the serial port.
-#define RELEASE
+//#define RELEASE
 
 
 #define LOADER_ADDR 0x40D000
@@ -96,11 +103,9 @@ extern const u8* upload_end;
 extern const u8 credits[];
 extern const u8* credits_end;
 
-
 void wdt_init(void);
 void reset(void);
 void ldelay(volatile int i);
-
 
 // Function Implementation
 void wdt_init(void)
@@ -114,22 +119,20 @@ void wdt_init(void)
 
 inline void delay(void)
 {
-	int i = 200;
-	while (i--);
+  int i = 68; // 28 seems minimum, ~48 seems problem spot, 60+ for shell
+               // short is good for drive patch, long good for shell loading
+   while ((i--) != 0) {
+     nop();
+   }
 }
 
 #ifndef RELEASE
 
-void USART_Init( unsigned int baud )
+void USART_Init(void)
 {
-	UCSRA = 2;
-	/* Set baud rate */
-	UBRRH = (unsigned char)(baud>>8);
-	UBRRL = (unsigned char)baud;
-	/* Enable Receiver and Transmitter */
-	UCSRB = /* (1<<RXEN)| */ (1<<TXEN);
-	/* Set frame format: 8data, 1stop bit */
-	UCSRC = (0<<USBS)|(3<<UCSZ0)|(1<<URSEL);
+  UBRR0L = (uint8_t) (F_CPU / (16UL * USART0_BAUD)) - 1;
+  UBRR0H = (uint8_t) ((F_CPU / (16UL * USART0_BAUD)) - 1) >>8;
+  UCSR0B = (1<<TXEN0 | 1<<RXEN0); 	// tx/rx enable
 }
 
 void USART_Transmit( unsigned char data )
@@ -137,9 +140,9 @@ void USART_Transmit( unsigned char data )
 	if (data == '\n')
 		USART_Transmit('\r');
 	/* Wait for empty transmit buffer */
-	while ( !( UCSRA & (1<<UDRE)) );
+	while ( !( UCSR0A & (1<<UDRE0)) );
 	/* Put data into buffer, sends the data */
-	UDR = data;
+	UDR0 = data;
 }
 
 void sputs( char* data )
@@ -187,38 +190,64 @@ int io(char i)
 	else
 		X_OUT_PORT &=~X_OUT;
 	
-	X_CLK_PORT &=~X_CLK; if (!ndelay) delay();
-	res = X_IN_PIN & X_IN;
-	X_CLK_PORT |= X_CLK; if (!ndelay) delay();
-	
+   X_CLK_PORT &= ~X_CLK; 
+   if (!ndelay) {
+     delay();
+   }
+   res = X_IN_PIN & X_IN;
+   X_CLK_PORT |= X_CLK;
+   if (!ndelay) {
+     delay();
+   }
+
 	return !!res;
 }
 
 void send8(unsigned char c)
 {
-	int i = 0;
-	
-	while (X_STR_PIN & X_STR) if (i++ > 10000) reset();
-	for (i=0; i<8; ++i)
-	{
-		if (X_STR_PIN & X_STR)
-			reset();
-		io(c & (1<<i));
-	}
+  unsigned long int i = 0;
+
+  while (X_STR_PIN & X_STR) {
+    if ((i++) > 4000) {
+      sputs("to in send8\n");
+      reset();
+    }
+  }
+  nop(); // glitch protection
+  for (i = 0; i < 8; ++i)
+  {
+    if (X_STR_PIN & X_STR) {
+      sputs("rst in send8 inner\n");
+      reset();
+    }
+    io(c & (1 << i));
+  }
 }
 
 unsigned char recv8(void)
 {
-	unsigned char x = 0;
-	int i=0;
-	while (!(X_STR_PIN & X_STR)) if (i++ > 10000) reset();
-	for (i=0; i<8; ++i)
-	{
-		if (!(X_STR_PIN & X_STR))
-			reset();
-		x |= io(0) << i;
-	}
-	return x;
+  unsigned char x = 0;
+  unsigned long int i = 0;
+  int a = 0;
+  
+  while (!(X_STR_PIN & X_STR))
+  {
+    if ((i++) > 4000) {
+      sputs("to in recv8\n");
+      reset();
+    }
+  }
+  nop(); // glitch protection
+  for (a = 0; a < 8; ++a)
+  {
+    if (!(X_STR_PIN & X_STR))
+    {
+      sputs("rst in recv8 inner\n");
+      reset();
+    }
+    x |= io(0) << a;
+  }
+  return x;
 }
 
 unsigned char io8(unsigned char c)
@@ -318,7 +347,6 @@ void write_block(long address, unsigned char *source, int len)
 
 void reset()
 {
-  
   	#define soft_reset()        
    	wdt_enable(WDTO_15MS);  
 	sputs("RESET!\n");
@@ -328,7 +356,8 @@ void reset()
 
 void ldelay(volatile int i)
 {
-	while (i--) {
+	while ((i--) != 0) {
+     nop();
 //		if (X_STR_PIN & X_STR)
 //			reset();
 	}
@@ -379,7 +408,7 @@ int main(void)
 
 	LED_INIT;
 #ifndef RELEASE	
-	USART_Init(103);
+	USART_Init(); // 9600 baud
 #endif
 	
 	int i;
@@ -398,11 +427,12 @@ int main(void)
 	// 0 1
 	LED2_ON; LED1_OFF; 	// -> red
 
+   //ndelay starts at 0 and switches to 1 later; used in io()
 	sputs("syncing..\n");
 	while (1) {
 		last_recv >>= 1;
 		last_recv |= io(1) ? 0x8000 : 0;
-//		sputhex16(last_recv); sputs("\n");
+		//sputhex16(last_recv); sputs("\n");
 		if (last_recv == 0xeeee)
 		  break;
 	}
@@ -459,6 +489,7 @@ int main(void)
 		csum += n;
 
 		if (r != e)	{
+         sputs("rst r diffs from e\n"); 
 			reset();
 		}
 
@@ -500,6 +531,7 @@ int main(void)
 	while (!(X_STR_PIN & X_STR)) {
 	}
 
+   sputs("rst at fin (strobe)\n");
 	reset();
 	return 0;
 }
