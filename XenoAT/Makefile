@@ -22,6 +22,9 @@
 # To rebuild project do "make clean" then "make all".
 #
 
+# Windows: Tested using WinAVR-20100110 and babun shell (http://babun.github.io/)
+# (There was a problem with avr-objcopy with the Windows command prompt.)
+# Linux: Untested, will probably work with the toolchain correctly installed
 
 # MCU name
 MCU = atmega328
@@ -36,6 +39,13 @@ TARGET = XenoAT
 # (Note: 3 is not always the best optimization level. See avr-libc FAQ.)
 OPT = s
 
+# Fuses for ATmega328
+# http://eleccelerator.com/fusecalc/fusecalc.php?chip=atmega328p&LOW=D2&HIGH=D9&EXTENDED=FE&LOCKBIT=FF
+# Tests here didn't suggest the chip has to hurry up on cold boot. Just make sure to have some slight brownout protection.
+# 8Mhz internal oscillator for maximum flexibility
+LFUSE = 0xd2
+HFUSE = 0xd9
+EFUSE = 0xfe
 
 # List C source files here. (C dependencies are automatically generated.)
 SRC = $(TARGET).c 
