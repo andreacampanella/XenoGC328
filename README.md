@@ -10,6 +10,6 @@ http://www.gc-forever.com/forums/viewtopic.php?t=439
 
 This version run on an ATmega8L, not a lot of ports are been made, mostly because you don't really need them, the Atmega8L is cheap and still in production. Someone made a Raspberry Pi port of it.
 
-emmuboy:
+emuboy:
 
 Atmega328/Arduino port (ATTENTION! THIS NEED TO BE FLASHED VIA ISP ON THE ARDUINO).
